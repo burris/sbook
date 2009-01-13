@@ -1,0 +1,85 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {"modem_testModem" = id; }; 
+            CLASS = DialerBundleClass; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                dialerPanel = NSPanel; 
+                dialerPrefPanel = NSView; 
+                "modem_device" = NSTextField; 
+                "modem_dropSeconds" = NSTextField; 
+                "modem_grabModem" = NSButton; 
+                "modem_holdModemMinutes" = NSTextField; 
+                "modem_initString" = NSTextField; 
+                "modem_keepMatrix" = NSMatrix; 
+                "modem_useTouchTone" = NSButton; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = DialerPanel; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                dialedNumber = NSTextField; 
+                dialingField = NSTextField; 
+                dialingTitleField = NSTextField; 
+                modemSend = NSTextField; 
+            }; 
+            SUPERCLASS = SBookModalPanel; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                bugsAndSuggestions = id; 
+                import = id; 
+                knownBugsInThisRelease = id; 
+                newInThisRelease = id; 
+                openURL = id; 
+                "openURL_Cancel" = id; 
+                "openURL_Okay" = id; 
+                releaseModem = id; 
+                showInspector = id; 
+                showLegal = id; 
+                showPrefs = id; 
+            }; 
+            CLASS = SBookController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                addressBook = id; 
+                bulkEmailer = id; 
+                dialerPanel = id; 
+                emailer = id; 
+                envelopePanel = id; 
+                enveloper = id; 
+                every = id; 
+                exportInfoView = id; 
+                importingTabAlertPanel = id; 
+                infoPanel = id; 
+                infoVersionCell = id; 
+                inspector = id; 
+                legalPanel = id; 
+                mailingLabels = id; 
+                newLogger = id; 
+                openURLField = id; 
+                passphraseCreatePanel = id; 
+                passphraseEnterPanel = id; 
+                preferencePanel = id; 
+                printText = id; 
+                quickFax = id; 
+                rangePanel = id; 
+                registrationPanel = id; 
+                slistController = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {cancel = id; proceed = id; }; 
+            CLASS = SBookModalPanel; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {okButton = id; }; 
+            SUPERCLASS = NSPanel; 
+        }
+    ); 
+    IBVersion = 1; 
+}

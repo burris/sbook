@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 39;
+	objects = {
+		014CEA420018CDE011CA2923 = {
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				ZERO_LINK = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		014CEA430018CDE011CA2923 = {
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				ZERO_LINK = NO;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+//010
+//011
+//012
+//013
+//014
+//080
+//081
+//082
+//083
+//084
+		089C1669FE841209C02AAC07 = {
+			buildSettings = {
+			};
+			buildStyles = (
+				014CEA420018CDE011CA2923,
+				014CEA430018CDE011CA2923,
+			);
+			hasScannedForEncodings = 1;
+			isa = PBXProject;
+			mainGroup = 089C166AFE841209C02AAC07;
+			projectDirPath = "";
+			targets = (
+				8D5B49AC048680CD000E48DA,
+			);
+		};
+		089C166AFE841209C02AAC07 = {
+			children = (
+				518CF25105A20E8200416998,
+				08FB77AFFE84173DC02AAC07,
+				32C88E010371C26100C91783,
+				089C167CFE841241C02AAC07,
+				089C1671FE841209C02AAC07,
+				19C28FB8FE9D52D311CA2CBB,
+				518CF25A05A211B900416998,
+				518CF25B05A211B900416998,
+				51CA834705A3231400FE13E7,
+				51CA834805A3231400FE13E7,
+				511E5D5A071F370C00B3ECA9,
+			);
+			isa = PBXGroup;
+			name = SyncBundle;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 = {
+			children = (
+				1058C7ACFEA557BF11CA2CBB,
+				1058C7AEFEA557BF11CA2CBB,
+			);
+			isa = PBXGroup;
+			name = "Frameworks and Libraries";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		089C1672FE841209C02AAC07 = {
+			expectedFileType = wrapper.framework;
+			isa = PBXFileReference;
+			name = Foundation.framework;
+			path = /System/Library/Frameworks/Foundation.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		089C167CFE841241C02AAC07 = {
+			children = (
+				518CF25E05A212D700416998,
+				8D5B49B7048680CD000E48DA,
+				089C167DFE841241C02AAC07,
+				518CF26305A2133600416998,
+			);
+			isa = PBXGroup;
+			name = Resources;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		089C167DFE841241C02AAC07 = {
+			children = (
+				089C167EFE841241C02AAC07,
+			);
+			isa = PBXVariantGroup;
+			name = InfoPlist.strings;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		089C167EFE841241C02AAC07 = {
+			expectedFileType = text.plist.strings;
+			fileEncoding = 10;
+			isa = PBXFileReference;
+			name = English;
+			path = English.lproj/InfoPlist.strings;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		089C167FFE841241C02AAC07 = {
+			expectedFileType = wrapper.framework;
+			isa = PBXFileReference;
+			name = AppKit.framework;
+			path = /System/Library/Frameworks/AppKit.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		08FB77AFFE84173DC02AAC07 = {
+			children = (
+				518CF24C05A20E8200416998,
+				5190D80305A36CC800682F49,
+				518CF24E05A20E8200416998,
+				518CF24F05A20E8200416998,
+				518CF25005A20E8200416998,
+			);
+			isa = PBXGroup;
+			name = Classes;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//080
+//081
+//082
+//083
+//084
+//100
+//101
+//102
+//103
+//104
+		1058C7ACFEA557BF11CA2CBB = {
+			children = (
+				1058C7ADFEA557BF11CA2CBB,
+			);
+			isa = PBXGroup;
+			name = "Linked Frameworks";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		1058C7ADFEA557BF11CA2CBB = {
+			expectedFileType = wrapper.framework;
+			isa = PBXFileReference;
+			name = Cocoa.framework;
+			path = /System/Library/Frameworks/Cocoa.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		1058C7AEFEA557BF11CA2CBB = {
+			children = (
+				089C1672FE841209C02AAC07,
+				089C167FFE841241C02AAC07,
+			);
+			isa = PBXGroup;
+			name = "Other Frameworks";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//100
+//101
+//102
+//103
+//104
+//190
+//191
+//192
+//193
+//194
+		19C28FB8FE9D52D311CA2CBB = {
+			children = (
+				8D5B49B6048680CD000E48DA,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//190
+//191
+//192
+//193
+//194
+//320
+//321
+//322
+//323
+//324
+		32C88E010371C26100C91783 = {
+			children = (
+				32DBCF630370AF2F00C91783,
+			);
+			isa = PBXGroup;
+			name = "Other Sources";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		32DBCF630370AF2F00C91783 = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			path = SyncBundle_Prefix.pch;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//320
+//321
+//322
+//323
+//324
+//510
+//511
+//512
+//513
+//514
+		511E5D5A071F370C00B3ECA9 = {
+			expectedFileType = wrapper.framework;
+			isa = PBXFileReference;
+			name = AddressBook.framework;
+			path = /System/Library/Frameworks/AddressBook.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		511E5D5B071F370C00B3ECA9 = {
+			fileRef = 511E5D5A071F370C00B3ECA9;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		518CF24C05A20E8200416998 = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = AddressBookSyncer.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		518CF24E05A20E8200416998 = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = NetSyncher.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		518CF24F05A20E8200416998 = {
+			expectedFileType = sourcecode.cpp.objcpp;
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = NetSyncher.mm;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		518CF25005A20E8200416998 = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = Syncher.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		518CF25105A20E8200416998 = {
+			expectedFileType = sourcecode.cpp.objcpp;
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = Syncher.mm;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		518CF25205A20E8200416998 = {
+			fileRef = 518CF24C05A20E8200416998;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		518CF25405A20E8200416998 = {
+			fileRef = 518CF24E05A20E8200416998;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		518CF25505A20E8200416998 = {
+			fileRef = 518CF24F05A20E8200416998;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		518CF25605A20E8200416998 = {
+			fileRef = 518CF25005A20E8200416998;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		518CF25705A20E8200416998 = {
+			fileRef = 518CF25105A20E8200416998;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		518CF25A05A211B900416998 = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			path = SyncBundleClass.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		518CF25B05A211B900416998 = {
+			expectedFileType = sourcecode.cpp.objcpp;
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			path = SyncBundleClass.mm;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		518CF25C05A211B900416998 = {
+			fileRef = 518CF25A05A211B900416998;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		518CF25D05A211B900416998 = {
+			fileRef = 518CF25B05A211B900416998;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		518CF25E05A212D700416998 = {
+			children = (
+				518CF25F05A212D700416998,
+			);
+			isa = PBXVariantGroup;
+			name = AddressBookSync.nib;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		518CF25F05A212D700416998 = {
+			expectedFileType = wrapper.nib;
+			isa = PBXFileReference;
+			name = English;
+			path = English.lproj/AddressBookSync.nib;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		518CF26005A212D700416998 = {
+			fileRef = 518CF25E05A212D700416998;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		518CF26305A2133600416998 = {
+			children = (
+				518CF26405A2133600416998,
+			);
+			isa = PBXVariantGroup;
+			name = SyncBundle.nib;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		518CF26405A2133600416998 = {
+			expectedFileType = wrapper.nib;
+			isa = PBXFileReference;
+			name = English;
+			path = English.lproj/SyncBundle.nib;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		518CF26505A2133600416998 = {
+			fileRef = 518CF26305A2133600416998;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		5190D80305A36CC800682F49 = {
+			expectedFileType = sourcecode.cpp.objcpp;
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = AddressBookSyncer.mm;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		5190D80405A36CC800682F49 = {
+			fileRef = 5190D80305A36CC800682F49;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		51CA834705A3231400FE13E7 = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			path = ABPersonAdditions.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		51CA834805A3231400FE13E7 = {
+			expectedFileType = sourcecode.cpp.objcpp;
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			path = ABPersonAdditions.mm;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		51CA834905A3231400FE13E7 = {
+			fileRef = 51CA834705A3231400FE13E7;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		51CA834A05A3231400FE13E7 = {
+			fileRef = 51CA834805A3231400FE13E7;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+//510
+//511
+//512
+//513
+//514
+//8D0
+//8D1
+//8D2
+//8D3
+//8D4
+		8D5B49AC048680CD000E48DA = {
+			buildPhases = (
+				8D5B49AD048680CD000E48DA,
+				8D5B49AF048680CD000E48DA,
+				8D5B49B1048680CD000E48DA,
+				8D5B49B3048680CD000E48DA,
+				8D5B49B5048680CD000E48DA,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SyncBundle_Prefix.pch;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "../SBook51 ../libsbook ";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = Bundle;
+				OTHER_CFLAGS = "-g";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SyncBundle;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+				WRAPPER_EXTENSION = bundle;
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = SyncBundle;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = SyncBundle;
+			productReference = 8D5B49B6048680CD000E48DA;
+			productType = "com.apple.product-type.bundle";
+		};
+		8D5B49AD048680CD000E48DA = {
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49AE048680CD000E48DA,
+				518CF25205A20E8200416998,
+				518CF25405A20E8200416998,
+				518CF25605A20E8200416998,
+				518CF25C05A211B900416998,
+				51CA834905A3231400FE13E7,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5B49AE048680CD000E48DA = {
+			fileRef = 32DBCF630370AF2F00C91783;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		8D5B49AF048680CD000E48DA = {
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B0048680CD000E48DA,
+				518CF26005A212D700416998,
+				518CF26505A2133600416998,
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5B49B0048680CD000E48DA = {
+			fileRef = 089C167DFE841241C02AAC07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		8D5B49B1048680CD000E48DA = {
+			buildActionMask = 2147483647;
+			files = (
+				518CF25505A20E8200416998,
+				518CF25705A20E8200416998,
+				518CF25D05A211B900416998,
+				51CA834A05A3231400FE13E7,
+				5190D80405A36CC800682F49,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5B49B3048680CD000E48DA = {
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B4048680CD000E48DA,
+				511E5D5B071F370C00B3ECA9,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5B49B4048680CD000E48DA = {
+			fileRef = 1058C7ADFEA557BF11CA2CBB;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		8D5B49B5048680CD000E48DA = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5B49B6048680CD000E48DA = {
+			expectedFileType = "wrapper.plug-in";
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = SyncBundle.bundle;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8D5B49B7048680CD000E48DA = {
+			expectedFileType = text.plist;
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			path = Info.plist;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+	};
+	rootObject = 089C1669FE841209C02AAC07;
+}

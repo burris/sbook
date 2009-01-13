@@ -1,0 +1,4 @@
+This text file explains how we make multi-platform stuff work.
+
+1. Basic Cocoa types are provided in the "fakecocoa.h" include file.
+

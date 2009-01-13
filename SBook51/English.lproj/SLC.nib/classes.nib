@@ -1,0 +1,184 @@
+{
+    IBClasses = (
+        {CLASS = ButtonWithMenu; LANGUAGE = ObjC; SUPERCLASS = NSButton; }, 
+        {
+            CLASS = ExportWell; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {exportWellLabel = id; slc = id; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {CLASS = ExportingTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {
+            ACTIONS = {selectAllSearchField = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                import = id; 
+                okay = id; 
+                setQuickdex = id; 
+                setSBookAscii = id; 
+                setSBookBinary = id; 
+                setSpeedex = id; 
+                setTabbed = id; 
+            }; 
+            CLASS = Importer; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                dupMatrix = id; 
+                dupPanel = id; 
+                importAccessoryView = id; 
+                importFirstRecordCell = id; 
+                importFormatButton = id; 
+                importRecordCountCell = id; 
+                importSourceButton = id; 
+                importStatusPanel = id; 
+                slc = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                changeSearchMode = id; 
+                displayAll = id; 
+                manualParse = id; 
+                nextEntry = id; 
+                previousEntry = id; 
+                search = id; 
+                searchAction = id; 
+                selectPerson = id; 
+            }; 
+            CLASS = MyDocument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                entryText = id; 
+                entryTextScroller = id; 
+                exportWell = id; 
+                fieldEditor = id; 
+                lockButton = id; 
+                nameMatrix = id; 
+                nameMatrixScroller = id; 
+                parser = id; 
+                personCell = id; 
+                personDisplayed = id; 
+                searchCell = id; 
+                searchModeCover = id; 
+                searchModePopup = id; 
+                splitView = id; 
+                statusCell = id; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {CLASS = MySound; LANGUAGE = ObjC; SUPERCLASS = Sound; }, 
+        {CLASS = PersonCell; LANGUAGE = ObjC; SUPERCLASS = NSBrowserCell; }, 
+        {CLASS = SBookIconView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {
+            CLASS = SBookText; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {myScroller = NSScrollView; }; 
+            SUPERCLASS = NSTextView; 
+        }, 
+        {
+            ACTIONS = {
+                applyTemplateToAllEntries = id; 
+                copy = id; 
+                cut = id; 
+                delete = id; 
+                displayAll = id; 
+                displayPerson = id; 
+                exportToAppleAddressBook = id; 
+                exportToiPod = id; 
+                exportTovCards = id; 
+                find = id; 
+                globalSearchAndReplace = id; 
+                import = id; 
+                importCurrent = id; 
+                importFromAppleAddressBook = id; 
+                newEntry = id; 
+                nextEntry = id; 
+                paste = id; 
+                previousEntry = id; 
+                printEntry = id; 
+                printMailingLabels = id; 
+                refreshDocument = id; 
+                removeDuplicates = id; 
+                resetSplitBar = id; 
+                search = id; 
+                syncWithAddressBook = id; 
+                takeSearchModeFromSender = id; 
+                toggleEncryptDatabase = id; 
+                toggleEncryptEntry = id; 
+                toggleFilterCompanies = id; 
+                toggleFilterPeople = id; 
+                toggleIconDisplay = id; 
+                toggleLockEntry = id; 
+                toggleOpenFileOnLaunch = id; 
+                togglePrivateEntry = id; 
+                toggleSortEntries = id; 
+            }; 
+            CLASS = SLC; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                addressBook = AddressBookPanel; 
+                addressBookSyncer = AddressBookSyncer; 
+                backButton = NSButtonCell; 
+                encryptButton = id; 
+                entryText = SBookText; 
+                entryTextScroller = id; 
+                envelopePanel = EnvelopePanel; 
+                exportFileInfoView = ExportFileInfoView; 
+                exportWell = id; 
+                fieldEditor = NSText; 
+                forwardButton = NSButtonCell; 
+                globalSearchAndReplacePanel = GlobalSearchAndReplacePanel; 
+                iconView = SBookIconView; 
+                importAccessoryView = NSView; 
+                importProgress = NSProgressIndicator; 
+                labelMaker = LabelMaker; 
+                lockButton = id; 
+                nameTable = ExportingTableView; 
+                omitDuplicatesSwitch = NSButton; 
+                openFileAutomatically = NSButton; 
+                progressPanel = ProgressPanel; 
+                rangePanel = RangePanel; 
+                removeExistingvCardsButton = NSButton; 
+                searchCell = NSTextField; 
+                searchModePopup = id; 
+                splitView = NSSplitView; 
+                statusCell = id; 
+                textStatusCell = id; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {
+            CLASS = SListMatrix; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {searchCell = id; }; 
+            SUPERCLASS = NSMatrix; 
+        }, 
+        {CLASS = SWindow; LANGUAGE = ObjC; SUPERCLASS = NSWindow; }, 
+        {CLASS = SWindowFieldEditor; LANGUAGE = ObjC; SUPERCLASS = NSTextView; }, 
+        {
+            ACTIONS = {takeView = id; }; 
+            CLASS = SwitchingView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                popup = id; 
+                view0 = id; 
+                view1 = id; 
+                view2 = id; 
+                view3 = id; 
+                view4 = id; 
+                view5 = id; 
+                view6 = id; 
+                view7 = id; 
+                view8 = id; 
+                view9 = id; 
+            }; 
+            SUPERCLASS = NSView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,44 @@
+2002-jan-29
+* Upgraded to Qt 3.0.1. 
+* Modified XML parser so it can handle (and in fact requires) a !DOCTYPE tag.
+* I really should migrate it to expat. 
+* Wow. I guess I was using the program instead of developing it.
+* Significant changes to libsbook to make it run under Objective-C.
+
+2001-aug-11
+* Decided to release version 0.3. I need a better name for the Qt version of
+  SBook.... 
+
+2001-june-24
+* Damn, I've been working on this a long time. 
+* Upgraded to Qt 3.0. That caused a multi-month delay.
+* created firstname(), lastname(), restname() methods for Entry object.
+* created a simple palm-export format
+
+2001-feb-01
+* Auto search mode: automatically goes to full-text search if partial search fails.
+* autoload last saved file
+* added lots of accelerators
+* ^a - selects all in sbookedit.
+* tab in sbook-edit needs to insert a tab.
+* alt-enter on first line inserts a carriage return.
+
+2000-dec-28 slg
+* Implemented NXAtom system. NXAtom and NXUniqueString().
+* Modified the Entries and Entry widgets so that they can take a 
+  setProperty: message. Then all of the Entry and Entries management 
+  simply devolves to setProperties.
+* smartSortKey cached
+* fonts properly restored 
+* ^c - copy
+* ^v - paste
+* paste following a ^n results with the past going into the
+  address field, not the search field. 
+* Changing search mode automatically does a new search
+
+
+2000-dec-03 slg Added Entry Delete/Undelete
+2000-feb-25 slg Added InfoGenie export/import
+2000-feb-25 slg Fixed import/export of tab & CSV
+2000-feb-25 slg fixed SaveAs to use new QFileDialog. Fixed XML saving to close file.
+

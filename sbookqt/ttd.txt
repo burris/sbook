@@ -1,0 +1,62 @@
+* move AddressN to the Entry object
+* create EmailN
+
+BUGS:
+*Henry N. Hotlzman - second word comes up as "Holtzman"
+when you delete an entry, displayedEntry doesn't get changed to the new displaydEntry.
+* editing on the first line doesn't set isdirty
+
+* Need to reparse before printing.
+* WHen you delete an entry, and display a new one, need to select the new one.
+* double-click in text should select it. 
+* Need displayedEntry, in addition to selectedEntry
+FILE LOCKING:
+  * before you can make a file dirty, needs to grab a write lock. file.lck
+RECORD LOCKING:
+  * file.lck contains the number of the record you are locking and your name.
+FAST SAVES:
+  * after the entires, file has delta entries with new versions or deletions.
+    Find last </entries> and overwrite it.    
+* autosave if file has not been modified for 30 seconds.
+* If you click and drag, move the focus back down to the text field
+* when you do a full-text search, it should scroll to the search field and hilight it.
+* autosave
+* file locking
+* delete an entry, it should say how many entries left.
+* delete entry, new selected entry should be hilighted
+* If you click at the end of the first line, and hit return, it should insert a blank line. So note if the last event was a keystorke or a click, and act accordingly.
+
+* Grab a read/write lock on the file.
+* replace QString with a CBuffer object in xml.cpp, which should dramatically improve loading time.
+* initials
+* Autosave
+* dirty/not dirty should be kept track of in the EntryList?
+* set entry properties by setting them in entrylist. this will allow
+  lazy evaluation (necessary for client/server system)
+* forward & back arrorws.
+* set entry properties by setting them in entrylist. this will allow lazy evaluation (necessary for client/server system)
+
+Short-term things:
+* drag & drop of entries
+* figure out what is wrong with SBook on a \\ share 
+* right-click on the name in the list should bring up menu of options.
+
+Things that need to be done:
+* Import of tab-delimited and CSV inputs.
+* Export of tab-delimited and CVS outputs.
+* Parsing and active icons. 
+   => Wait for QT 3.0, which will have editable rich-text object.
+* Handling of multiple SBook files in a single window.
+   => Avoid going to multiple-windows.
+* Printing Address Books
+* Printing envelopes
+* Bulk email
+* Rule-based dialing system.
+* Export well, for drag-and-drop addresses & entries
+
+
+
+
+
+
+

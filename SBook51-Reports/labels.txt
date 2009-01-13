@@ -1,0 +1,40 @@
+;
+; This file lists labels that are commonly available. 
+; Feel free to modify this file; SBook will automatically read it each time the
+; label maker panel displays
+;
+; Specify our system of units; you can change them as often as you wish within the file.
+; allowable units: inches, cm, mm, points, picas
+units: inches
+
+;
+; Format for each entry:
+; Name	 labels-x labels-y  leftMargin  rightMargin  topMargin  bottomMargin
+;
+
+3M 7701 (1x1)	.00, .00, .00, .00
+3M 7706 (2x3)	.00, .00, .5,  .5
+3M 7708 (2x4)	.00, .00, .00, .00
+3M 7709 (3x3)	.00, .00, .50, .50
+3M 7710 (2x5)	.00, .00, .50, .50
+3M 7712 (3x4)	.00, .00, .333, .333
+3M 7714 (2x7)	.25, .25, .25, .25
+3M 7720 (2x10)	.25, .25, .5,  .5
+3M 7721 (3x7)	.25, .25, .25, .25
+3M 7724 (3x8)	.00, .00, .00, .00
+3M 7730 (3x10)	.25, .25, .5,  .5
+3M 7733 (3x11)	.00, .00, .00, .00
+
+Avery 5160/5260 (3x10)	0.25, 0.25, 0.5, 0.5
+Avery 5161/5261 (2x10)	0.25, 0.25, 0.5, 0.5
+Avery 5162/5262 (2x7)	0.25, 0.25, 0.5, 0.5
+Avery 5163 (2x5)	0.25, 0.25, 0.5, 0.5
+Avery 5164 (2x3)	.25, .25, .5,  .5
+Avery 5165 (1x1)	.25, .25, .25, .25
+Avery 5266 (2x15)	.75, .75, .5,  .5
+Avery 5267 (4x20)	0.25, 0.25, 0.5, 0.5
+Avery 5660 (3x10)	0, 0, 0.5, 0.5
+Avery 5662 (2x7)	0, 0, .833, .833
+Avery 5663 (2x5)	0, 0, .5, .5
+
+

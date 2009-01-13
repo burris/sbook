@@ -1,0 +1,6 @@
+1. QLabel() needs set functions for Dates.
+2. QLineEdit() needs set and get functions for dates.
+3. Really, QLabel->setNum is wrong, and setText() should be overloaded with number, date, and font-name setting functions. 
+4. the "initial" parameter of QFontDialog::getFont() is not being correctly interperted. The size is picked up, but the font name is not.
+
+

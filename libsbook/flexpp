@@ -1,0 +1,99 @@
+#!/usr/bin/perl
+#
+# flex pre-processor
+#
+# implements:
+#   .include()      - includes another file
+#   .flagfile(filename,begin,end) - include filename, putting begin and end 
+#                    at the beginning and end of each line.
+#   .linemacro FFF  - declares FFF as a line number macro (replaced with line # of current file)
+#   .quotemacro FF  - declares FF as a quote macro (replaced with first half of current line, quoted)
+#   .quoteprefix YY - put YY before any quotemacro expansion
+
+sub process {
+    my($filename,$input) = @_;
+    $input++;
+    unless (open($input, $filename)) {
+	die "Can't open $filename: $!\n";
+    }
+
+    local $_;
+    my $linemacro  = "";
+    my $quotemacro = "";
+    my $quoteprefix;
+    my $linenumber = 0;
+    while (<$input>) {              # note use of indirection
+	chomp;
+	$linenumber++;
+	if (/^[.]include "(.*)"/) {
+	    process($1, $input);
+	    next;
+	}
+	if (/^[.]linemacro (.*)$/){
+	    $linemacro = $1;
+	    next;
+	}
+	if (/^[.]quotemacro (.*)$/){
+	    $quotemacro = $1;
+	    next;
+	}
+	if (/^[.]quoteprefix (.*)$/){
+	    $quoteprefix = $1;
+	    next;
+	}
+	if (/^[.]flagfile[(](.*),(.*),(.*)\)/){
+	    my $fn = $1;
+	    my $before = $2;
+	    my $end    = $3;
+	    open(JJ,$fn) || die "cannot open $fn: $!";
+	    while(<JJ>){
+		chomp;
+		$_ =~ s/^\s+//;	# remove leading whitespace
+		$_ =~ s/\s+$//;	# remove trailing whitespace
+		next if(/^\#/);	# skip comments
+		next if $_ eq ""; # skip blank lines
+		print $before . $_ . $end . "\n";
+	    }
+	    close(JJ);
+	    next;
+	}
+
+	if (/^[.]$/ || /^[.][ ]/){		# ". " is a comment
+	    next;
+	}
+	if(m/^([^\t]+)/){
+	    $quoteprefix = $1;
+	}
+
+	if ($linemacro && m/$linemacro/){
+	    $_ =~ s/$linemacro/$linenumber/;
+	}
+	if ($quotemacro && m/$quotemacro/){
+	    my $quoted = $quoteprefix;
+
+	    $quoted =~ s/\"//g;
+	    $quoted =~ s/\\/\\\\/g;
+
+	    $quoted = '"' . $quoted . '"';
+
+	    #print STDERR "was: $_\n";
+	    #print STDERR "quoted=$quoted\n";
+            #print STDERR "quoteprefix=$quoteprefix\n";
+	    #print STDERR "quotemacro=$quotemacro\n";
+
+	    $_ =~ s/$quotemacro/$quoted/;
+
+	    #print STDERR "is: $_\n\n";
+	}
+
+	print $_,"\n";
+    }
+    
+}
+
+if($ARGV[0]){
+    process($ARGV[0],'fh00');
+}
+else {
+    process("-",'fh00');		# output standard in
+}

@@ -1,0 +1,56 @@
+* If you do a paste into an SBookText and there is a Person on the board, paste it into the SList instead.
+
+* On load, factor the cusername and musername and other strings in Person
+
+* Changed dayField to dateField in RangePanel.
+	    
+to SBookController - envelope
+
+	
+	{
+	    EnvelopePanel *ep = [slc envelopePanel];
+	    [ep setPerson:person];
+	    [ep setAddress:[self stringForSelectedIconWithName:YES]];
+	    [ep runWithWindow:[self window]];
+	    [[slc displayedPerson] enveloped];
+	}
+
+
+- (IBAction)globalSearchAndReplace:(id)sender
+{
+    GlobalSearchAndReplacePanel *pan = [self globalSearchAndReplacePanel];
+
+    [self saveEntry];		// write the entry back
+    [pan  setSLC:self];
+    [pan  runAsSheet:[self window] modalDelegate:pan didEndSelector:@selector(done) contextInfo:nil];
+}
+
+
+Sync errors:
+
+sandstorm home phone numbers - labels didn't move over.
+
+4. Fix call to parse_lines in SList_txtwrite
+
+shift-on @ should just put the email address there. Drag too. Only click should do the extra stuff.
+
+
+1. Modify browser to show entries made today.
+
+
+
+2004-03-07 15:48:01.543 SBook5[592] *** Assertion failure in -[SLC progressPanel], /Users/simsong/sbook/SBook51/SLC.mm:156
+
+2004-03-07 15:48:01.568 SBook5[592] *** NSTimer discarding exception 'NSInternalInconsistencyException' (reason 'ProgressPanel nib did not load') that raised during firing of timer with target 5c1be90 and selector 'delayedvCardExport'
+
+2004-03-07 15:48:11.239 SBook5[592] *** Assertion failure in -[SLC progressPanel], /Users/simsong/sbook/SBook51/SLC.mm:156
+
+2004-03-07 15:48:11.241 SBook5[592] *** NSTimer discarding exception 'NSInternalInconsistencyException' (reason 'ProgressPanel nib did not load') that raised during firing of timer with target 5c1be90 and selector 'delayedvCardExport'
+
+
+
+(on export)
+
+
+- drag file into bottom - if it is a vcard just add it.
+- need to do importing of the RTFD.

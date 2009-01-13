@@ -1,0 +1,344 @@
+
+base64.cpp,140
+#define Assert(Assert52,2367
+static const char Base64[54,2410
+static const char Pad64 56,2508
+b64_ntop(123,5785
+b64_pton_slg(190,7646
+
+encrypted_object.cpp,413
+#define SIZE_FMT 16,265
+#define SIZE_FMT 20,321
+struct Encrypted_XML Encrypted_XML26,399
+static void startDoc(42,756
+static void endDoc(46,826
+static void characterDataHandler(51,901
+static void startElement(61,1133
+static void endElement(85,1619
+sstring *Encrypted_Object::decrypt_object(109,2100
+bool Encrypted_Object::is_encrypted_object(180,3969
+sstring *Encrypted_Object::encrypt_object(186,4118
+
+entry.cpp,328
+#define TIMET_FMT 7,82
+#define TIMET_FMT 11,140
+Entry::Entry(15,173
+Entry::~Entry(35,526
+bool Entry::hasCommaBeforeSpace(40,575
+void Entry::setCellName(55,844
+void Entry::setData(75,1373
+void Entry::setSortKey(128,2424
+sstring Entry::cellName(133,2480
+void Entry::xml_make(140,2591
+std::ostream & operator<< 238,5132
+
+entrylist.cpp,1725
+class tre tre19,350
+    tre(tre::tre21,370
+    void reg(tre::reg25,453
+    void reg(tre::reg28,566
+    void run(tre::run45,1045
+    void run(tre::run48,1147
+struct SBookXML SBookXML73,1684
+#define isentry(isentry93,2236
+#define isgid(isgid94,2335
+#define isentrysn(isentrysn95,2406
+#define SIZE_FMT 99,2552
+#define SIZE_FMT 101,2581
+static int initialized 115,2865
+void entrylist_set_frame(118,2895
+void entrylist_set_divider(123,3000
+void entrylist_set_flags(128,3096
+void entrylist_set_searchmode(133,3190
+void entrylist_set_defaultsortkey(138,3292
+void entrylist_set_defaultpersonflags(143,3402
+void entrylist_set_defaultusername(148,3519
+void entrylist_set_template(153,3641
+void entrylist_set_rtftemplate(158,3738
+void entry_set_text(170,3972
+void entry_set_rtfd(176,4127
+void entry_set_gid(182,4259
+void entry_set_entrysn(187,4338
+void entry_set_sk(192,4430
+void entry_set_ctime(197,4519
+void entry_set_atime(202,4608
+void entry_set_mtime(207,4697
+void entry_set_flags(212,4786
+void entry_set_cuser(217,4874
+void entry_set_muser(222,4976
+void entry_ignore(227,5078
+static void initialize_parser(233,5134
+static void startDoc(274,6732
+static void endDoc(278,6802
+static void characterDataHandler(283,6877
+static void startElement(302,7319
+static void endElement(395,9807
+EntryList *EntryList::xmlread(478,12018
+void EntryList::addEntry(538,13664
+Entry *EntryList::entryWithGid(546,13796
+void EntryList::removeEntry(551,13882
+unsigned EntryList::numEntries(564,14101
+Entry *EntryList::entryAt(569,14166
+EntryVector *EntryList::doSearch(577,14345
+void EntryList::xml_make(607,15112
+EntryIterator EntryList::begin(653,16362
+EntryIterator EntryList::end(658,16428
+
+hashtable.cpp,628
+enum{ HashTableSize ::HashTableSize76,2859
+unsigned int hash(82,3102
+static const char *alloc_string(92,3262
+HashTable *hashtable_alloc(102,3400
+void	hashtable_free(124,3830
+HASHNODE *hashtable_lookup(161,4685
+unsigned int	hashtable_keycount(192,5253
+const char *hashtable_keyvalue(201,5424
+unsigned  int hashtable_keyserial(210,5600
+HASHNODE *hashtable_addkeyvalue(229,6127
+HASHNODE *hashtable_addkey(288,7421
+unsigned int hashtable_count(293,7526
+static int strcompare(317,7951
+const char **hashtable_keys(322,8072
+enum { Ncol ::Ncol366,9110
+void hashtable_print(368,9130
+void hashtable_printstats(401,9848
+
+match.cpp,453
+static bool iswordchar[25,275
+static unsigned char mytoupper_[26,304
+static unsigned char mytoupper(28,343
+int isInnerCap(37,537
+int isRomanOrTitle(53,870
+int onlyBlankChars(82,1858
+int isOnlyDigits(93,2038
+static int wordchar_init 102,2159
+static void init_wordchar(103,2189
+NXAtomList *atomsForNames(135,2811
+int compareAtoms(206,4295
+int compareAtomLists(223,4574
+bool	sbookIncrementalMatch(273,5838
+bool	sbookIncrementalMatch(366,8074
+
+metaphone.cpp,241
+#define METAPHLEN	32,923
+static char *vowels 34,975
+static char *frontv 35,1030
+static char *varson 36,1101
+static void strstripup(38,1182
+char *metaphone(52,1391
+NXAtom	metaphoneName(278,6551
+NXAtomList *metaphonesForNames(292,6831
+
+misc.cpp,152
+NSPoint NSMakePoint(5,61
+NSSize NSMakeSize(12,159
+NSRect NSMakeRect(19,263
+sstring *stringForB64SString(31,444
+sstring *b64stringForSString(51,907
+
+nxatom.cpp,509
+static HashTable *ht 13,323
+NXAtom atom_blank 15,350
+NXAtom atom_dashes 16,392
+NXAtom atom_THE	17,442
+NXAtom atom_U	18,487
+NXAtom atom_S	19,528
+NXAtom atom_US	20,569
+NXAtom atom_AND	21,612
+NXAtom NXUniqueString(31,844
+NXAtomList::NXAtomList(48,1316
+NXAtomList::~NXAtomList(54,1396
+void NXAtomList::append(62,1469
+NXAtom &NXAtomList::operator[](69,1622
+unsigned int NXAtomList::count(76,1773
+NXAtom &NXAtomList::last(81,1832
+NXAtomList *NXAtomList::copy(87,1932
+void NXAtomList::print(97,2165
+
+parse_company.cpp,4842
+#define yy_create_buffer 1,0
+#define yy_delete_buffer 2,49
+#define yy_scan_buffer 3,98
+#define yy_scan_string 4,143
+#define yy_scan_bytes 5,188
+#define yy_flex_debug 6,231
+#define yy_init_buffer 7,274
+#define yy_flush_buffer 8,319
+#define yy_load_buffer_state 9,366
+#define yy_switch_to_buffer 10,423
+#define yyin 11,478
+#define yyleng 12,503
+#define yylex 13,532
+#define yyout 14,559
+#define yyrestart 15,586
+#define yytext 16,621
+#define FLEX_SCANNER24,814
+#define YY_FLEX_MAJOR_VERSION 25,835
+#define YY_FLEX_MINOR_VERSION 26,867
+#define __cplusplus34,1022
+#define YY_USE_PROTOS45,1166
+#define YY_USE_CONST48,1240
+#define YY_USE_PROTOS54,1303
+#define YY_USE_CONST55,1325
+#define YY_USE_CONST65,1489
+#define YY_USE_PROTOS66,1510
+#define yyconst 70,1560
+#define yyconst72,1588
+#define YY_PROTO(YY_PROTO77,1634
+#define YY_PROTO(YY_PROTO79,1670
+#define YY_NULL 83,1738
+#define YY_SC_TO_UI(YY_SC_TO_UI90,1985
+#define BEGIN 96,2216
+#define YY_START 102,2413
+#define YYSTATE 103,2451
+#define YY_STATE_EOF(YY_STATE_EOF106,2534
+#define YY_NEW_FILE 109,2654
+#define YY_END_OF_BUFFER_CHAR 111,2693
+#define YY_BUF_SIZE 114,2762
+typedef struct yy_buffer_state *YY_BUFFER_STATE;YY_BUFFER_STATE116,2789
+#define EOB_ACT_CONTINUE_SCAN 121,2886
+#define EOB_ACT_END_OF_FILE 122,2918
+#define EOB_ACT_LAST_MATCH 123,2948
+#define yyless(yyless141,3522
+#define unput(unput152,3777
+typedef unsigned int yy_size_t;yy_size_t158,4015
+struct yy_buffer_stateyy_buffer_state161,4049
+#define YY_BUFFER_NEW 203,5100
+#define YY_BUFFER_NORMAL 204,5124
+#define YY_BUFFER_EOF_PENDING 215,5622
+static YY_BUFFER_STATE yy_current_buffer 218,5659
+#define YY_CURRENT_BUFFER 224,5855
+static char yy_hold_char;228,5968
+static int yy_n_chars;230,5995
+int yyleng;233,6068
+static char *yy_c_buf_p 236,6126
+static int yy_init 237,6164
+static int yy_start 238,6225
+static int yy_did_buffer_switch_on_eof;243,6404
+#define YY_FLUSH_BUFFER 253,6849
+#define yy_new_buffer 263,7288
+#define yy_set_interactive(yy_set_interactive265,7328
+#define yy_set_bol(yy_set_bol272,7533
+#define YY_AT_BOL(YY_AT_BOL279,7706
+#define yywrap(yywrap282,7759
+#define YY_SKIP_YYWRAP283,7778
+typedef unsigned char YY_CHAR;YY_CHAR284,7801
+FILE *yyin 285,7832
+typedef int yy_state_type;yy_state_type286,7878
+#define yytext_ptr 288,7926
+static yyconst short yy_nxt[289,7952
+#define YY_DO_BEFORE_ACTION 123212,4814685
+#define YY_NUM_RULES 123219,4814839
+#define YY_END_OF_BUFFER 123220,4814864
+static yyconst short int yy_accept[123221,4814893
+static yyconst int yy_ec[124815,4909084
+static yy_state_type yy_last_accepting_state;124847,4910797
+static char *yy_last_accepting_cpos;124848,4910843
+#define REJECT 124853,4910983
+#define yymore(yymore124854,4911027
+#define YY_MORE_ADJ 124855,4911073
+#define YY_RESTORE_YY_MORE_OFFSET124856,4911095
+char *yytext;124857,4911129
+#define INITIAL 124858,4911143
+static	unsigned int	aflag;124871,4911452
+static int yy_start_stack_ptr 124907,4912140
+static int yy_start_stack_depth 124908,4912175
+static int *yy_start_stack 124909,4912212
+#define YY_NO_PUSH_STATE 124921,4912489
+#define YY_NO_POP_STATE 124922,4912516
+#define YY_NO_TOP_STATE 124923,4912542
+#define YY_READ_BUF_SIZE 124943,4912958
+#define ECHO 124952,4913177
+#define YY_INPUT(YY_INPUT124959,4913369
+#define yyterminate(yyterminate124969,4913772
+#define YY_START_STACK_INCR 124974,4913907
+#define YY_FATAL_ERROR(YY_FATAL_ERROR124979,4913997
+#define YY_DECL 124986,4914172
+#define YY_USER_ACTION124993,4914345
+#define YY_BREAK 124998,4914438
+#define YY_RULE_SETUP 125001,4914470
+static int yy_get_next_buffer(130341,5059728
+static yy_state_type yy_get_previous_state(130473,5062850
+static yy_state_type yy_try_NUL_trans(130501,5063485
+static void yyunput(130528,5064059
+static int yyinput(130572,5065118
+void yyrestart(130645,5066636
+void yy_switch_to_buffer(130660,5066925
+void yy_load_buffer_state(130690,5067655
+YY_BUFFER_STATE yy_create_buffer(130703,5067933
+void yy_delete_buffer(130734,5068648
+void yy_init_buffer(130760,5069087
+void yy_flush_buffer(130787,5069517
+YY_BUFFER_STATE yy_scan_buffer(130818,5070114
+YY_BUFFER_STATE yy_scan_string(130856,5070999
+YY_BUFFER_STATE yy_scan_bytes(130873,5071281
+static void yy_push_state(130912,5072075
+static void yy_pop_state(130945,5072752
+static int yy_top_state(130956,5072951
+#define YY_EXIT_FAILURE 130963,5073063
+static void yy_fatal_error(130967,5073118
+#define yyless(yyless130982,5073371
+static void yy_flex_strncpy(130999,5073679
+static int yy_flex_strlen(131015,5073951
+static void *yy_flex_alloc(131031,5074152
+static void *yy_flex_realloc(131041,5074322
+static void yy_flex_free(131059,5074893
+int main(131069,5075020
+unsigned int	parse_company0(131076,5075066
+unsigned int	parse_company(131106,5075514
+
+query.cpp,388
+char *file 25,272
+char *progname 26,288
+unsigned opt_b 28,310
+int quiet 29,330
+void usage(30,345
+void explain_iflags(51,1433
+void explain_results_flags(80,2533
+int explain_name(101,3219
+int webexplain(124,3885
+void do_file(166,4845
+void match_test(205,5617
+void do_webvcard(215,5851
+void do_vcard(244,6432
+void match_lines(281,7124
+void results(303,7506
+int main(347,8908
+
+sbook_parser.cpp,176
+int sbook_parser_debug=13,161
+unsigned int identify_line(20,271
+void parse_lines(60,1091
+void	extract_label(261,6086
+void		parse_block(275,6384
+void		free_block(309,7405
+
+sbookreader.cpp,98
+int opt_c 24,322
+int opt_cgi 25,337
+void errorfunc(29,377
+void usage(34,429
+int main(51,1138
+
+searcher.cpp,210
+#define WORDS 11,120
+class tre tre13,159
+    void add(tre::add17,251
+    void check(tre::check20,384
+tre::tre(25,563
+void tre::add(30,612
+void tre::check(47,1051
+void blurb(63,1333
+int main(68,1401
+
+smartsort.cpp,103
+static bool	smartsort_iscorp(18,209
+const char *wordBeforeComma(33,464
+NXAtom smartSortName(61,1030
+
+vcard.cpp,151
+static void str_qcat(16,183
+static void strncat2(43,763
+static void strncat3(50,956
+static bool istitle(58,1224
+void parse_block_to_vcard(71,1685

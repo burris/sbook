@@ -1,0 +1,6 @@
+# These case problems; not sure why
+
+\001[ ]*"tel:".*[0-9]{3}				{aflag |= P_TELEPHONE;}/* 2-14-02 */
+\001[ ]*"phone:".*[0-9]{3}				{aflag |= P_TELEPHONE;}/* 2-14-02 */
+\001[ ]*"fax:".*[0-9]{3}				{aflag |= P_TELEPHONE;}/* 2-14-02 */
+\001[ ]*"mob:".*[0-9]{3}				{aflag |= P_TELEPHONE;}/* 2-14-02 */

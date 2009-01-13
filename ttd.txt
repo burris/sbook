@@ -1,0 +1,23 @@
+Things to do:
+
+* Dr. Gretchen shouldn't have been copied over, and she shouldn't have had her RR line triplicated.
+   --- fix the triplicate first, then the fact that it was copied.
+
+* Make this entry the template.
+
+* Modifying the text doesn't work anymore.
+
+* Remove repeated lines
+
+1. Version numbering.
+
+1. Modify libsbook to work with either STL strings or QStrings.
+   (Compile-time #ifdef)
+
+2. Modify sbookqt to work with new libsbook.
+
+3. Modify SBook5 so that the Person and PersonList structures start using the functionality  
+   inside libsbook, and then slowly migrate functions from Objective-C to C++.
+
+4. Option to avoid synching private entries.
+

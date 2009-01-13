@@ -1,0 +1,106 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                "entry_attributeChanged" = id; 
+                "entry_changedSortKey" = id; 
+                "file_changedAttrib" = id; 
+                "template_applyToAllEntries" = id; 
+                "template_changedDefaultSortKey" = id; 
+                "template_restoreDefault" = id; 
+            }; 
+            CLASS = Inspector; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "entry_createdCell" = id; 
+                "entry_dialEntryExactSwitch" = id; 
+                "entry_lastCalledCell" = id; 
+                "entry_lastEmailedCell" = id; 
+                "entry_lastEnvelopedCell" = id; 
+                "entry_lastModifiedCell" = id; 
+                "entry_myEntryCell" = NSTextField; 
+                "entry_nameCell" = id; 
+                "entry_parseEntrySwitch" = id; 
+                "entry_sortKeyCover" = id; 
+                "entry_sortNameCell" = id; 
+                "file_autosortSwitch" = id; 
+                "file_dialBoldExactSwitch" = id; 
+                "file_dialFileExactSwitch" = id; 
+                "file_dontParseAfterBlankSwitch" = id; 
+                "file_dontParseBoldSwitch" = id; 
+                "file_dontParseItalicSwitch" = id; 
+                "file_dontParseSwitch" = id; 
+                "file_openOnStartupSwitch" = id; 
+                "file_statusCell" = id; 
+                filenameCell = id; 
+                "gen_splitDirection" = id; 
+                tabview = id; 
+                "template_Text" = NSTextView; 
+                "template_defaultSortKeyCover" = id; 
+                window = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                bugsAndSuggestions = id; 
+                deleteName = id; 
+                newEnvelopeWindow = id; 
+                newList = id; 
+                newLogWindow = id; 
+                sendQuickFax = id; 
+                showInspector = id; 
+                showLegal = id; 
+                showPrefs = id; 
+            }; 
+            CLASS = SBookController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                addressBook = id; 
+                bulkEmailer = id; 
+                checkSpellingMenuCell = id; 
+                copyMenuCell = id; 
+                cutMenuCell = id; 
+                deleteEntryCell = id; 
+                dialer = id; 
+                editMenuCell = id; 
+                emailer = id; 
+                entryMenuCell = id; 
+                enveloper = id; 
+                every = id; 
+                exporter = id; 
+                fileMenuCell = id; 
+                findByRangeMenuCell = id; 
+                findMenuCell = id; 
+                fontMenuCell = id; 
+                iconsMenuCell = id; 
+                infoPanel = id; 
+                infoVersionCell = id; 
+                inspector = id; 
+                legalPanel = id; 
+                lockEntryMenuCell = id; 
+                mailingLabels = id; 
+                newEntryMenuCell = id; 
+                newLogger = id; 
+                pasteMenuCell = id; 
+                prefController = id; 
+                printText = id; 
+                quickFax = id; 
+                ranger = id; 
+                registrationPanel = id; 
+                reportsMenuCell = id; 
+                revertEntryCell = id; 
+                saveAllCell = id; 
+                selectAllMenuCell = id; 
+                slistController = id; 
+                spellingMenuCell = id; 
+                textMenuCell = id; 
+                toolsMenuCell = id; 
+                unlockModemCell = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

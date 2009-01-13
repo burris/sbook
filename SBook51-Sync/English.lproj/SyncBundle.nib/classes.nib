@@ -1,0 +1,43 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = SyncBundleClass; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                syncPreferenceView = NSView; 
+                "sync_passphrase" = id; 
+                "sync_password" = id; 
+                "sync_sbook_deletes_addressbook" = id; 
+                "sync_username" = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {cancel1 = id; cancel2 = id; okay = id; sync = id; }; 
+            CLASS = Syncher; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                abRecordsCopied = NSFormCell; 
+                abRecordsRemoved = NSFormCell; 
+                abRecordsSkipped = NSFormCell; 
+                "ab_to_sbook" = NSProgressIndicator; 
+                "abook_cleaner" = NSProgressIndicator; 
+                cancel2Button = id; 
+                okay2Button = id; 
+                sbookRecordsCopied = NSFormCell; 
+                sbookRecordsRemoved = NSFormCell; 
+                sbookRecordsSkipped = NSFormCell; 
+                "sbook_cleaner" = NSProgressIndicator; 
+                "sbook_to_abook" = NSProgressIndicator; 
+                syncActionMatrix = NSMatrix; 
+                syncSetupPanel = NSPanel; 
+                syncStatusPanel = NSPanel; 
+                totalABRecords = id; 
+                totalSBookRecords = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

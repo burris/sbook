@@ -1,0 +1,31 @@
+* Going to want to modify ViewWithUnits so that it maintains a printinfo.
+* updates it with the paper size.
+* pagesetup alters it.
+
+
+
+
+/* Add these menus: */
+- (IBAction)printOneEnvelope:sender
+{
+    [[self envelopePanel] setAddress:@""];
+    [[self envelopePanel] runWithWindow:nil];	// no window
+}
+
+
+add to SLC:
+- (IBAction)printAddressBook2:(NSArray *)selected
+{
+    [[self addressBook] generateReportForPeople:selected];
+}
+
+
+- (IBAction)printMailingLabels2:(NSArray *)selected
+{
+    [[self labelMaker] generateReportForPeople:selected];
+}
+
+
+
+
+- print label from selection.

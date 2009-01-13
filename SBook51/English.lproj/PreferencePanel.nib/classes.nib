@@ -1,0 +1,175 @@
+{
+    IBClasses = (
+        {CLASS = AddressBookSyncer; LANGUAGE = ObjC; SUPERCLASS = Syncher; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {displayLinkedFontPanel = id; takeFontFrom = id; }; 
+            CLASS = FontWell; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSColorWell; 
+        }, 
+        {
+            ACTIONS = {testConnectivity = id; }; 
+            CLASS = NetSyncher; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = Syncher; 
+        }, 
+        {
+            ACTIONS = {add = id; delete = id; }; 
+            CLASS = OpenOnLaunchBrowser; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSBrowser; 
+        }, 
+        {
+            ACTIONS = {"modem_testModem" = id; }; 
+            CLASS = PreferencePanel; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "dialing_defaultAreaCode" = NSTextField; 
+                "dialing_enableSpecialExchangeProcessing" = id; 
+                "dialing_internationalDialingPrefix" = NSTextField; 
+                "dialing_localAreaCodes" = NSTextField; 
+                "dialing_localDialingPrefix" = NSTextField; 
+                "dialing_longDistanceDialingPrefix" = NSTextField; 
+                "dialing_phoneCompanyRequires10Digit" = NSButton; 
+                "dialing_specialDialingPrefix" = NSTextField; 
+                "dialing_specialExchanges" = NSTextField; 
+                "dialing_special_label1" = id; 
+                "dialing_special_label2" = id; 
+                "dialing_special_label3" = id; 
+                "dialing_yourCountryCode" = id; 
+                "gen_autocheckInterval" = id; 
+                "gen_autocheckLabel" = id; 
+                "gen_autosaveInterval" = id; 
+                "gen_autosaveLabel" = id; 
+                "gen_checkNewVersions" = id; 
+                "gen_enableAutocheck" = id; 
+                "gen_enableAutosave" = id; 
+                "gen_insertHelp" = id; 
+                "gen_lastnameFirstname" = id; 
+                "gen_maxEntriesDisplay" = id; 
+                "gen_removeColorFromPastedText" = id; 
+                "gen_showHorizontalScroller" = id; 
+                "get_autoCreateOnBlankClick" = id; 
+                "launch_openFileBrowser" = NSBrowser; 
+                "launch_openOnActivate" = NSButton; 
+                "modem_device" = id; 
+                "modem_dropSeconds" = id; 
+                "modem_grabModem" = id; 
+                "modem_holdModemMinutes" = id; 
+                "modem_initString" = id; 
+                "modem_keepMatrix" = id; 
+                "modem_useTouchTone" = id; 
+                "sync_sbook_deletes_addressbook" = id; 
+                tv = NSTabView; 
+                view0 = NSView; 
+                view1 = NSView; 
+                view2 = NSView; 
+                view3 = NSView; 
+                view4 = NSView; 
+                view5 = NSView; 
+                view6 = NSView; 
+                view7 = NSView; 
+                view8 = NSView; 
+                view9 = NSView; 
+                "view_highlightSearchResults" = id; 
+            }; 
+            SUPERCLASS = NSPanel; 
+        }, 
+        {
+            ACTIONS = {
+                bugsAndSuggestions = id; 
+                import = id; 
+                knownBugsInThisRelease = id; 
+                newInThisRelease = id; 
+                openURL = id; 
+                "openURL_Cancel" = id; 
+                "openURL_Okay" = id; 
+                showInspector = id; 
+                showLegal = id; 
+                showPrefs = id; 
+            }; 
+            CLASS = SBookController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                addressBook = id; 
+                bulkEmailer = id; 
+                dialer = id; 
+                emailer = id; 
+                envelopePanel = id; 
+                enveloper = id; 
+                every = id; 
+                exportInfoView = id; 
+                importingTabAlertPanel = id; 
+                infoPanel = id; 
+                infoVersionCell = id; 
+                inspector = id; 
+                legalPanel = id; 
+                mailingLabels = id; 
+                newLogger = id; 
+                openURLField = id; 
+                passphraseCreatePanel = id; 
+                passphraseEnterPanel = id; 
+                preferencePanel = id; 
+                printText = id; 
+                quickFax = id; 
+                rangePanel = id; 
+                registrationPanel = id; 
+                slistController = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {cancel = id; proceed = id; }; 
+            CLASS = SBookModalPanel; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {okButton = id; }; 
+            SUPERCLASS = NSPanel; 
+        }, 
+        {
+            ACTIONS = {takeView = id; }; 
+            CLASS = SwitchingView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                popup = id; 
+                view0 = id; 
+                view1 = id; 
+                view2 = id; 
+                view3 = id; 
+                view4 = id; 
+                view5 = id; 
+                view6 = id; 
+                view7 = id; 
+                view8 = id; 
+                view9 = id; 
+            }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            ACTIONS = {cancel1 = id; cancel2 = id; okay = id; sync = id; }; 
+            CLASS = Syncher; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                abRecordsCopied = NSFormCell; 
+                abRecordsRemoved = NSFormCell; 
+                abRecordsSkipped = NSFormCell; 
+                "ab_to_sbook" = NSProgressIndicator; 
+                "abook_cleaner" = NSProgressIndicator; 
+                cancel2Button = id; 
+                okay2Button = id; 
+                sbookRecordsCopied = NSFormCell; 
+                sbookRecordsRemoved = NSFormCell; 
+                sbookRecordsSkipped = NSFormCell; 
+                "sbook_cleaner" = NSProgressIndicator; 
+                "sbook_to_abook" = NSProgressIndicator; 
+                syncActionMatrix = NSMatrix; 
+                syncSetupPanel = NSPanel; 
+                syncStatusPanel = NSPanel; 
+                totalABRecords = id; 
+                totalSBookRecords = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

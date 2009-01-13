@@ -1,0 +1,206 @@
+{
+    IBClasses = (
+        {
+            CLASS = DialUSA; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                DcurrentAreaCodeCell = id; 
+                DdefaultAreaCodeCell = id; 
+                DspecialExchangeScroller = id; 
+                DspecialExchangeText = id; 
+                intlPrefixCell = id; 
+                localPrefixCell = id; 
+                longPrefixCell = id; 
+                specialPrefixCell = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {cancel = id; done = id; log = id; }; 
+            CLASS = Dialer; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                dialingPerson = id; 
+                modemCommandCell = id; 
+                phoneDialingCell = id; 
+                touchTone = id; 
+                window = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = Emailer; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                changeEnvelopeSize = id; 
+                changePosition = id; 
+                changeStationary = id; 
+                stationarySave = id; 
+                stationarySaveAs = id; 
+            }; 
+            CLASS = Enveloper; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                addressText = id; 
+                envelopePanelView = id; 
+                envelopeView = id; 
+                fromForm = id; 
+                fromXCell = id; 
+                fromYCell = id; 
+                logSwitch = id; 
+                person = id; 
+                returnAddressText = id; 
+                stationaryButton = id; 
+                stationaryPopup = id; 
+                toForm = id; 
+                toXCell = id; 
+                toYCell = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {takeExportFormat = id; }; 
+            CLASS = ExportFileInfoView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                currentRemoveSwitch = id; 
+                delimiterPopup = id; 
+                formatPopup = id; 
+                messageCell = id; 
+                removeIpodContactsSwitch = id; 
+                removevCardContactsSwitch = id; 
+                savePanel = id; 
+                switchingView = id; 
+            }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            ACTIONS = {takeExportFormat = id; }; 
+            CLASS = ExportInfoView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                delimiterPopup = id; 
+                formatPopup = id; 
+                messageCell = id; 
+                removeIpodContactsSwitch = id; 
+                removevCardContactsSwitch = id; 
+                savePanel = id; 
+                switchingView = id; 
+            }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                bugsAndSuggestions = id; 
+                import = id; 
+                knownBugsInThisRelease = id; 
+                newInThisRelease = id; 
+                openURL = id; 
+                "openURL_Cancel" = id; 
+                "openURL_Okay" = id; 
+                releaseModem = id; 
+                showInspector = id; 
+                showLegal = id; 
+                showPrefs = id; 
+            }; 
+            CLASS = SBookController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                addressBook = id; 
+                bulkEmailer = id; 
+                dialerPanel = id; 
+                emailer = id; 
+                envelopePanel = id; 
+                enveloper = id; 
+                every = id; 
+                exportInfoView = id; 
+                importingTabAlertPanel = id; 
+                infoPanel = id; 
+                infoVersionCell = id; 
+                inspector = id; 
+                legalPanel = id; 
+                mailingLabels = id; 
+                newLogger = id; 
+                openURLField = id; 
+                passphraseCreatePanel = id; 
+                passphraseEnterPanel = id; 
+                preferencePanel = id; 
+                printText = id; 
+                quickFax = id; 
+                rangePanel = id; 
+                registrationPanel = id; 
+                slistController = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                copy = id; 
+                cut = id; 
+                delete = id; 
+                displayAll = id; 
+                displayPerson = id; 
+                encryptEntry = id; 
+                exportToiPod = id; 
+                exportTovCards = id; 
+                find = id; 
+                import = id; 
+                importCurrent = id; 
+                newEntry = id; 
+                nextEntry = id; 
+                paste = id; 
+                previousEntry = id; 
+                printMailingLabels = id; 
+                refreshDocument = id; 
+                search = id; 
+                takeSearchModeFromSender = id; 
+                toggleEncryptDatabase = id; 
+                toggleEncryptEntry = id; 
+                toggleIconDisplay = id; 
+                toggleLockEntry = id; 
+                toggleOpenFileOnLaunch = id; 
+                toggleSortEntries = id; 
+            }; 
+            CLASS = SLC; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                directoryExportView = id; 
+                encryptButton = id; 
+                entryText = SBookText; 
+                entryTextScroller = id; 
+                exportFileInfoView = ExportFileInfoView; 
+                exportWell = id; 
+                fieldEditor = NSText; 
+                iconView = SBookIconView; 
+                lockButton = id; 
+                nameTable = NSTableView; 
+                searchCell = id; 
+                searchModePopup = id; 
+                splitView = id; 
+                statusCell = id; 
+                textStatusCell = id; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {
+            ACTIONS = {takeView = id; }; 
+            CLASS = SwitchingView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                popup = id; 
+                view0 = id; 
+                view1 = id; 
+                view2 = id; 
+                view3 = id; 
+                view4 = id; 
+                view5 = id; 
+                view6 = id; 
+                view7 = id; 
+                view8 = id; 
+                view9 = id; 
+            }; 
+            SUPERCLASS = NSView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

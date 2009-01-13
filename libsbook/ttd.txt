@@ -1,0 +1,16 @@
+What could it be:
+
+parse_block - works if it doesn't call parse_lines
+
+Bug is in parse_lines or something called by parse_lines
+
+
+parse_lines - has the bug
+validated:	   
+   - smartsort_iscorp
+   - parse_company
+   - parse_address
+
+testing:
+ - identify_line
+	

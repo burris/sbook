@@ -1,0 +1,148 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                applyTemplate = id; 
+                applyTemplateToAllEntries = id; 
+                backEntry = id; 
+                bugsAndSuggestions = id; 
+                dateAndTimeStamp = id; 
+                dateStamp = id; 
+                displayAll = id; 
+                encryptEntry = id; 
+                export = id; 
+                exportToAppleAddressBook = id; 
+                exportToFile = id; 
+                exportToiPod = id; 
+                exportTovCards = id; 
+                filterAllEntries = id; 
+                filterJustCompanies = id; 
+                filterJustPeople = id; 
+                filterNone = id; 
+                find = id; 
+                forwardEntry = id; 
+                globalSearchAndReplace = id; 
+                import = id; 
+                importFromAppleAddressBook = id; 
+                insertDateAndTimeStamp = id; 
+                insertDateStamp = id; 
+                insertTimeStamp = id; 
+                knownBugsInThisRelease = id; 
+                lockEntry = id; 
+                makeMyEntry = id; 
+                newEntry = id; 
+                newInThisRelease = id; 
+                openDocumentReadOnly = id; 
+                openURL = id; 
+                printAddressBook = id; 
+                printEntry = id; 
+                printLabelFromSelection = id; 
+                printMailingLabels = id; 
+                pushEntryToAppleAddressBook = id; 
+                refreshDocument = id; 
+                removeDuplicates = id; 
+                removeLeadingSpaceFromEachLine = id; 
+                resetSplitBar = id; 
+                showAllEntries = id; 
+                showFileInSpecialMenu = id; 
+                showLicense = id; 
+                splitHorizontal = id; 
+                splitVertical = id; 
+                switchToFont1 = id; 
+                switchToFont2 = id; 
+                syncWithAddressBook = id; 
+                timeStamp = id; 
+                toggleEncryptDatabase = id; 
+                toggleEncryptEntry = id; 
+                toggleFilterCompanies = id; 
+                toggleFilterPeople = id; 
+                toggleIconDisplay = id; 
+                toggleLockEntry = id; 
+                toggleOpenFileOnLaunch = id; 
+                toggleSortEntries = id; 
+                toggleTextRuler = id; 
+            }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = MutableStringArray; LANGUAGE = ObjC; SUPERCLASS = NSMutableArray; }, 
+        {
+            ACTIONS = {
+                changeSearchMode = id; 
+                displayAll = id; 
+                manualParse = id; 
+                newEntry = id; 
+                nextEntry = id; 
+                previousEntry = id; 
+                search = id; 
+                searchAction = id; 
+                selectPerson = id; 
+                sortNames = id; 
+            }; 
+            CLASS = MyDocument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                entryText = id; 
+                entryTextScroller = id; 
+                exportWell = id; 
+                fieldEditor = id; 
+                lockButton = id; 
+                nameMatrix = id; 
+                nameMatrixScroller = id; 
+                parser = id; 
+                personCell = id; 
+                personDisplayed = id; 
+                searchCell = id; 
+                searchModeCover = id; 
+                searchModePopup = id; 
+                splitView = id; 
+                statusCell = id; 
+                window = id; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {
+            ACTIONS = {showPreferencePanel = id; }; 
+            CLASS = PlugInController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                bugsAndSuggestions = id; 
+                import = id; 
+                knownBugsInThisRelease = id; 
+                newInThisRelease = id; 
+                openURL = id; 
+                "openURL_Cancel" = id; 
+                "openURL_Okay" = id; 
+                showInspector = id; 
+                showLicense = id; 
+            }; 
+            CLASS = SBookController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                bulkEmailer = id; 
+                dialerPanel = id; 
+                emailer = id; 
+                envelopePanel = EnvelopePanel; 
+                importingTabAlertPanel = id; 
+                infoPanel = id; 
+                infoVersionCell = id; 
+                inspector = id; 
+                mailingLabels = id; 
+                newLogger = id; 
+                openURLField = id; 
+                passphraseCreatePanel = id; 
+                passphraseEnterPanel = id; 
+                quickFax = id; 
+                registrationPanel = id; 
+                slistController = id; 
+                specialMenu = id; 
+            }; 
+            SUPERCLASS = PlugInController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,201 @@
+{
+    IBClasses = (
+        {CLASS = AbstractReportElement; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {changedSelectionCriteria = id; print = id; reportFinished = id; }; 
+            CLASS = AbstractReportPanel; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                displayLastnameFirstnameSwitch = NSButtonCell; 
+                includeWoAddress = NSButtonCell; 
+                includeWoEmail = NSButtonCell; 
+                includeWoPhone = NSButtonCell; 
+                includeWoURL = NSButtonCell; 
+                preview = AbstractReportView; 
+                selectionProgress = NSProgressIndicator; 
+                showAddressesSwitch = NSButtonCell; 
+                showEmailsSwitch = NSButtonCell; 
+                showEntireEntrySwitch = NSButtonCell; 
+                showNamesSwitch = NSButtonCell; 
+                showPhonesSwitch = NSButtonCell; 
+                showURLsSwitch = NSButtonCell; 
+                zoomScrollView = ZoomScrollView; 
+            }; 
+            SUPERCLASS = SBookModalPanel; 
+        }, 
+        {
+            ACTIONS = {changedLayoutInformation = id; }; 
+            CLASS = AbstractReportView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                bottomPageMarginCell = NSFormCell; 
+                fontWell0 = FontWell; 
+                fontWell1 = FontWell; 
+                fontWell2 = FontWell; 
+                layoutProgress = NSProgressIndicator; 
+                leftPageMarginCell = NSFormCell; 
+                numEntriesCell = NSTextField; 
+                numPagesCell = NSTextField; 
+                presetFormatPopup = id; 
+                rightPageMarginCell = NSFormCell; 
+                topPageMarginCell = NSFormCell; 
+            }; 
+            SUPERCLASS = ViewWithUnits; 
+        }, 
+        {
+            CLASS = AddressBookPanel; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {multiPageView = MultiPageView; }; 
+            SUPERCLASS = AbstractReportPanel; 
+        }, 
+        {
+            ACTIONS = {changedPresetAddress = id; }; 
+            CLASS = AddressBookView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                betweenEntrySpacingCell = NSFormCell; 
+                columnsPopup = NSPopUpButton; 
+                formatButton = NSPopUpButton; 
+                gutterCell = NSFormCell; 
+                multiPageView = MultiPageView; 
+                phoneNumberWidthCell = NSFormCell; 
+            }; 
+            SUPERCLASS = AbstractReportView; 
+        }, 
+        {CLASS = AddressElement; LANGUAGE = ObjC; SUPERCLASS = AbstractReportElement; }, 
+        {CLASS = AddressElementLine; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = BookView; LANGUAGE = ObjC; SUPERCLASS = AbstractReportView; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {displayLinkedFontPanel = id; takeFontFrom = id; }; 
+            CLASS = FontWell; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSColorWell; 
+        }, 
+        {
+            ACTIONS = {applyPreset = id; resetElementsLayout = id; }; 
+            CLASS = LabelView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                applyPresetButton = NSPopUpButton; 
+                bottomLabelMarginCell = NSFormCell; 
+                labelsHighCell = NSFormCell; 
+                labelsPerPageField = NSTextField; 
+                labelsWideCell = NSFormCell; 
+                leftLabelMarginCell = NSFormCell; 
+                rightLabelMarginCell = NSFormCell; 
+                textAlignmentMatrix = NSMatrix; 
+                textPositionMatrix = NSMatrix; 
+                topLabelMarginCell = NSFormCell; 
+                zoomScrollView = ZoomScrollView; 
+            }; 
+            SUPERCLASS = AbstractReportView; 
+        }, 
+        {
+            ACTIONS = {foldsChanged = id; layout = id; }; 
+            CLASS = MultiPageView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {docView = id; foldsPopup = NSPopUpButton; }; 
+            SUPERCLASS = ViewWithUnits; 
+        }, 
+        {
+            CLASS = ReportsBundleClass; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                addressBookPanel = AddressBookPanel; 
+                envelopePanel = EnvelopePanel; 
+                labelMakerPanel = LabelMakerPanel; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {cancel = id; proceed = id; }; 
+            CLASS = SBookModalPanel; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {okButton = id; }; 
+            SUPERCLASS = NSPanel; 
+        }, 
+        {
+            CLASS = SBookProgressIndicator; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSProgressIndicator; 
+        }, 
+        {
+            ACTIONS = {
+                copy = id; 
+                cut = id; 
+                delete = id; 
+                displayAll = id; 
+                displayPerson = id; 
+                encryptEntry = id; 
+                exportToiPod = id; 
+                exportTovCards = id; 
+                find = id; 
+                import = id; 
+                importCurrent = id; 
+                newEntry = id; 
+                nextEntry = id; 
+                paste = id; 
+                previousEntry = id; 
+                printEntry = id; 
+                printMailingLabels = id; 
+                refreshDocument = id; 
+                search = id; 
+                takeSearchModeFromSender = id; 
+                toggleEncryptDatabase = id; 
+                toggleEncryptEntry = id; 
+                toggleFilterCompanies = id; 
+                toggleFilterPeople = id; 
+                toggleIconDisplay = id; 
+                toggleLockEntry = id; 
+                toggleOpenFileOnLaunch = id; 
+                toggleSortEntries = id; 
+            }; 
+            CLASS = SLC; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                addressBook = AddressBookPanel; 
+                encryptButton = id; 
+                entryText = SBookText; 
+                entryTextScroller = id; 
+                envelopePanel = EnvelopePanel; 
+                exportFileInfoView = ExportFileInfoView; 
+                exportWell = id; 
+                fieldEditor = NSText; 
+                iconView = SBookIconView; 
+                labelMaker = LabelMaker; 
+                lockButton = id; 
+                nameTable = NSTableView; 
+                progressPanel = ProgressPanel; 
+                rangePanel = RangePanel; 
+                removeExistingvCardsButton = NSButton; 
+                searchCell = NSTextField; 
+                searchModePopup = id; 
+                splitView = id; 
+                statusCell = id; 
+                textStatusCell = id; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {
+            ACTIONS = {changedPaperSize = id; changedUnits = id; }; 
+            CLASS = ViewWithUnits; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                paperSizeField = NSTextField; 
+                paperSizePopup = NSPopUpButton; 
+                unitsPopup = NSPopUpButton; 
+            }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            ACTIONS = {changeZoom = id; }; 
+            CLASS = ZoomScrollView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {subView = id; zoomButton = id; }; 
+            SUPERCLASS = NSScrollView; 
+        }, 
+        {CLASS = "java.lang.Object"; LANGUAGE = Java; }
+    ); 
+    IBVersion = 1; 
+}

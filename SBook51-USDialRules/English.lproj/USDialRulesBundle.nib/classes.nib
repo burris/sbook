@@ -1,0 +1,24 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = USDialRulesBundleClass; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "dialing_defaultAreaCode" = NSTextField; 
+                "dialing_enableSpecialExchangeProcessing" = NSButton; 
+                "dialing_internationalDialingPrefix" = NSTextField; 
+                "dialing_localAreaCodes" = NSTextField; 
+                "dialing_localDialingPrefix" = NSTextField; 
+                "dialing_longDistanceDialingPrefix" = NSTextField; 
+                "dialing_phoneCompanyRequires10Digit" = NSButton; 
+                "dialing_specialDialingPrefix" = NSTextField; 
+                "dialing_specialExchanges" = NSTextField; 
+                "dialing_yourCountryCode" = NSTextField; 
+                usDialRulesPrefPanel = NSView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

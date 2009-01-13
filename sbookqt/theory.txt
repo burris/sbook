@@ -1,0 +1,31 @@
+Distributed theory of operation:
+
+REPLICATION
+  SBook is based no a replication system that's similar to what's used
+  by the Microsoft Briefcase or IMAP.  By design, the server is a
+  simple SQL server that you have access to. (It could be a more
+  sophisticated application based server.)
+
+  Database is created with a "publish" command. This does the
+  following:
+	=> Requests admin username/password
+	=> Creates schema on remote system.
+	=> Uploads the copy of the database from the local file.
+
+  The SQL database consists of the following:
+        => List of entries, with the following:
+	   - mod time
+	   - XML for entry itself.
+	   - bit for deleted.
+
+  Once a database exists, you can create a replicant database. A
+  replicant contains the following information:
+
+	=> SQL server source.
+	=> Username/password
+	=> Time of last update.
+	=> Local copies of each record, along with a bit that
+	indicates if it has been modified and another bit that
+	indicates if it has been deleted.
+
+

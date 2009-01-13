@@ -1,0 +1,73 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                applyTemplateToAllEntries = id; 
+                copy = id; 
+                cut = id; 
+                delete = id; 
+                displayAll = id; 
+                displayPerson = id; 
+                exportToiPod = id; 
+                exportTovCards = id; 
+                find = id; 
+                import = id; 
+                importCurrent = id; 
+                makeMyEntry = id; 
+                newEntry = id; 
+                nextEntry = id; 
+                paste = id; 
+                previousEntry = id; 
+                printEntry = id; 
+                refreshDocument = id; 
+                removeDuplicates = id; 
+                removeLeadingSpaceFromEachLine = id; 
+                resetSplitBar = id; 
+                search = id; 
+                takeSearchModeFromSender = id; 
+                toggleEncryptDatabase = id; 
+                toggleEncryptEntry = id; 
+                toggleFilterCompanies = id; 
+                toggleFilterPeople = id; 
+                toggleIconDisplay = id; 
+                toggleLockEntry = id; 
+                toggleOpenFileOnLaunch = id; 
+                togglePrivateEntry = id; 
+                toggleSortEntries = id; 
+            }; 
+            CLASS = SLC; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                backButton = NSButtonCell; 
+                encryptButton = id; 
+                entryText = SBookText; 
+                entryTextScroller = id; 
+                exportFileInfoView = ExportFileInfoView; 
+                exportWell = id; 
+                fieldEditor = NSText; 
+                forwardButton = NSButtonCell; 
+                iconView = SBookIconView; 
+                importAccessoryView = NSView; 
+                importProgress = NSProgressIndicator; 
+                lockButton = id; 
+                nameTable = ExportingTableView; 
+                omitDuplicatesSwitch = NSButton; 
+                openFileAutomatically = NSButton; 
+                progressPanel = ProgressPanel; 
+                rangePanel = RangePanel; 
+                removeExistingvCardsButton = NSButton; 
+                replaceUpdatedSwitch = NSButton; 
+                searchCell = NSTextField; 
+                searchFieldCell = NSSearchFieldCell; 
+                searchModePopup = id; 
+                splitView = NSSplitView; 
+                statusCell = id; 
+                textStatusCell = id; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {CLASS = "java.lang.Object"; LANGUAGE = Java; }
+    ); 
+    IBVersion = 1; 
+}

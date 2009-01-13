@@ -1,0 +1,76 @@
+Received: (from mail@localhost)
+	by apache.vineyard.net (8.9.0/8.9.0) id MAA23357
+	for <simsong@vineyard.net>; Fri, 21 Jan 2000 12:03:28 -0500 (EST)
+Received: from vineyard.net(206.166.156.10) by apache.vineyard.net via smap/slg (V2.0)
+	id sma023340; Fri Jan 21 12:03:24 2000
+Message-ID: <013001bf6430$a2ab3400$1700010a@sandstorm.net>
+From: "Sam Gorton" <sgorton@sandstorm.net>
+To: "Simson L. Garfinkel" <simsong@vineyard.net>
+Subject: draft sbook spec 
+Date: Fri, 21 Jan 2000 11:57:37 -0500
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.00.2919.6600
+X-Mimeole: Produced By Microsoft MimeOLE V5.00.2919.6600
+
+1) Freeform address listing -
+
+2) phone number searching - should be able to enter phone numbers in
+multiple formats, search for them in
+any of the formats and match any other
+    (Otherwise, different people entering numbers must use the same format
+or they won't be able to find it.)
+
+I think the easiest way to do that is to ignore space, dot, paren, comma
+when matching numeric searches -
+that way, it's pretty international already.
+
+If you entered 555-1233 and 555.1234, and entered "555123", it should show
+both listings as possibilites.
+
+3) "and", "or", and "not" searching
+
+4) Version history of changes to entries
+    - changes can have comments (A la cvs)
+    - changes dated
+    - tags?
+
+5) Clickable email addresses and hyperlinks (username@something.something,
+http://www.monkey.com)
+    (Should just www.monkey.com work?  Outlook makes it work, but that may
+be too silly.)
+
+    Handle linewrapping and URL-ification correctly, which no one else does.
+
+6) Import/export in .wab and vcard format
+
+7) Some people like phone dialing - it's easy, it could be done
+
+8) Would be nice - maintenance of
+
+9) Multiple books
+    - display one book at a time, multiple books, all books
+    - text search in one to all books
+
+10) Interoperability between web & localhost based sbook
+    some books local
+    some books remote
+    one URL can contain multiple books (?) - probably not worth it
+    want to be able to subscribe or unsubscribe to a booklist
+    server should know who has read & write permission to books
+    "moderated" books - can submit changes which must be
+approved/disapproved by moderator
+
+11) Crypto
+    crypt some info
+    crypt all info - checkbox (encrypted, unencrypted)
+    If you crypt a note, crypt the version history
+    crypt some notes? (cleartext notes, encrypted note - probably too
+complicated)
+    Warn before unencrypting entries
+    Optional Default - encrypt new entries
+    SSL-based communication between webbook and sbook

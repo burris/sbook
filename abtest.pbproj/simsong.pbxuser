@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 = {
+		activeBuildStyle = 014CEA4F0018CE4811CA2923;
+		activeExecutable = 51C9CFF503F06CA500BA0631;
+		activeTarget = 08FB779FFE84155DC02AAC07;
+		addToTargets = (
+			08FB779FFE84155DC02AAC07,
+		);
+		executables = (
+			51C9CFF503F06CA500BA0631,
+		);
+		perUserDictionary = {
+			PBXPerProjectTemplateStateSaveDate = 66088104;
+			PBXWorkspaceContents = (
+				{
+					LeftSlideOut = {
+						Split0 = {
+							Split0 = {
+								NavContent0 = {
+									bookmark = 51C9D01503F36A9900BA0631;
+									history = (
+										51C9D01003F36A9900BA0631,
+										51C9D01103F36A9900BA0631,
+										51C9D01203F36A9900BA0631,
+									);
+									prevStack = (
+										51C9D01303F36A9900BA0631,
+										51C9D01403F36A9900BA0631,
+									);
+								};
+								NavCount = 1;
+								NavGeometry0 = {
+									Frame = "{{0, 0}, {587, 398}}";
+									NavBarVisible = YES;
+								};
+								NavSplitVertical = NO;
+							};
+							SplitCount = 1;
+							Tab1 = {
+								Debugger = {
+									Split0 = {
+										SplitCount = 2;
+									};
+									SplitCount = 1;
+									TabCount = 2;
+								};
+								LauncherConfigVersion = 7;
+							};
+							Tab2 = {
+								LauncherConfigVersion = 3;
+								Runner = {
+								};
+							};
+							TabCount = 5;
+						};
+						SplitCount = 1;
+						Tab1 = {
+							OptionsSetName = "Hierarchy, all classes";
+						};
+						TabCount = 5;
+					};
+				},
+			);
+			PBXWorkspaceGeometries = (
+				{
+					ContentSize = "{856, 572}";
+					LeftSlideOut = {
+						ActiveTab = 1;
+						ActiveTabName = PBXClassBrowserModule;
+						Collapsed = NO;
+						Frame = "{{0, 23}, {856, 549}}";
+						Split0 = {
+							ActiveTab = 1;
+							ActiveTabName = PBXRunSessionModule;
+							Collapsed = NO;
+							Frame = "{{269, 0}, {587, 549}}";
+							Split0 = {
+								Frame = "{{0, 151}, {587, 398}}";
+							};
+							SplitCount = 1;
+							Tab0 = {
+								Frame = "{{0, 0}, {572, 214}}";
+							};
+							Tab1 = {
+								Debugger = {
+									Collapsed = NO;
+									Frame = "{{0, 0}, {572, 150}}";
+									Split0 = {
+										Frame = "{{0, 24}, {572, 126}}";
+										Split0 = {
+											Frame = "{{0, 0}, {279, 126}}";
+										};
+										Split1 = {
+											DebugVariablesTableConfiguration = (
+												Name,
+												123,
+												Value,
+												85,
+												Summary,
+												62.123,
+											);
+											Frame = "{{288, 0}, {284, 126}}";
+										};
+										SplitCount = 2;
+									};
+									SplitCount = 1;
+									Tab0 = {
+										Frame = "{{0, 0}, {100, 50}}";
+									};
+									Tab1 = {
+										Frame = "{{0, 0}, {100, 50}}";
+									};
+									TabCount = 2;
+									TabsVisible = YES;
+								};
+								Frame = "{{0, 0}, {572, 125}}";
+								LauncherConfigVersion = 7;
+							};
+							Tab2 = {
+								Frame = "{{0, 0}, {587, 127}}";
+								LauncherConfigVersion = 3;
+								Runner = {
+									Frame = "{{0, 0}, {587, 127}}";
+								};
+							};
+							Tab3 = {
+								BuildMessageFrame = "{{0, 0}, {589, 232}}";
+								BuildTranscriptFrame = "{{0, 241}, {589, 2}}";
+								BuildTranscriptFrameExpanded = YES;
+								Frame = "{{0, 0}, {587, 265}}";
+							};
+							Tab4 = {
+								Frame = "{{0, 0}, {612, 295}}";
+							};
+							TabCount = 5;
+							TabsVisible = YES;
+						};
+						SplitCount = 1;
+						Tab0 = {
+							Frame = "{{0, 0}, {260, 549}}";
+							GroupTreeTableConfiguration = (
+								TargetStatusColumn,
+								18,
+								MainColumn,
+								227,
+							);
+						};
+						Tab1 = {
+							ClassesFrame = "{{0, 0}, {247, 330}}";
+							ClassesTreeTableConfiguration = (
+								PBXBookColumnIdentifier,
+								20,
+								PBXClassColumnIdentifier,
+								204,
+							);
+							Frame = "{{0, 0}, {245, 549}}";
+							MembersFrame = "{{0, 339}, {247, 210}}";
+							MembersTreeTableConfiguration = (
+								PBXBookColumnIdentifier,
+								20,
+								PBXMethodColumnIdentifier,
+								203,
+							);
+						};
+						Tab2 = {
+							Frame = "{{0, 0}, {226, 549}}";
+						};
+						Tab3 = {
+							Frame = "{{0, 0}, {191, 549}}";
+							TargetTableConfiguration = (
+								ActiveObject,
+								16,
+								ObjectNames,
+								202.296,
+							);
+						};
+						Tab4 = {
+							BreakpointsTreeTableConfiguration = (
+								breakpointColumn,
+								138,
+								enabledColumn,
+								31,
+							);
+							Frame = "{{0, 0}, {191, 549}}";
+						};
+						TabCount = 5;
+						TabsVisible = YES;
+					};
+					NavBarShownByDefault = YES;
+					StatusViewVisible = YES;
+					Template = F5F68CF101725D4C0D7A8F4C;
+					ToolbarVisible = YES;
+					WindowLocation = "{5, 112}";
+				},
+			);
+			PBXWorkspaceStateSaveDate = 66088104;
+		};
+		perUserProjectItems = {
+			51C9D01003F36A9900BA0631 = 51C9D01003F36A9900BA0631;
+			51C9D01103F36A9900BA0631 = 51C9D01103F36A9900BA0631;
+			51C9D01203F36A9900BA0631 = 51C9D01203F36A9900BA0631;
+			51C9D01303F36A9900BA0631 = 51C9D01303F36A9900BA0631;
+			51C9D01403F36A9900BA0631 = 51C9D01403F36A9900BA0631;
+			51C9D01503F36A9900BA0631 = 51C9D01503F36A9900BA0631;
+		};
+		projectwideBuildSettings = {
+		};
+		wantsIndex = 1;
+		wantsSCM = -1;
+	};
+	08FB779FFE84155DC02AAC07 = {
+		activeExec = 0;
+		executables = (
+			51C9CFF503F06CA500BA0631,
+		);
+	};
+	51C9CFF503F06CA500BA0631 = {
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		configStateDict = {
+		};
+		debuggerPlugin = GDBDebugging;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		isa = PBXExecutable;
+		name = abtest;
+		shlibInfoDictList = (
+		);
+		sourceDirectories = (
+		);
+	};
+	51C9D01003F36A9900BA0631 = {
+		fRef = 51C9D01803F36A9900BA0631;
+		glyphRangeLength = 2;
+		glyphRangeLocation = 4;
+		isa = PBXDocBookmark;
+		name = "CocoaTopics.html: ...";
+	};
+	51C9D01103F36A9900BA0631 = {
+		fRef = 51C9D01903F36A9900BA0631;
+		glyphRangeLength = 2;
+		glyphRangeLocation = 61;
+		isa = PBXDocBookmark;
+		name = "FoundationTOC.html: ...";
+	};
+	51C9D01203F36A9900BA0631 = {
+		fRef = 51C9D01A03F36A9900BA0631;
+		isa = PBXBookmark;
+	};
+	51C9D01303F36A9900BA0631 = {
+		fRef = 51C9D01B03F36A9900BA0631;
+		glyphRangeLength = 2;
+		glyphRangeLocation = 4;
+		isa = PBXDocBookmark;
+		name = "CocoaTopics.html: ...";
+	};
+	51C9D01403F36A9900BA0631 = {
+		fRef = 51C9D01603F36A9900BA0631;
+		glyphRangeLength = 2;
+		glyphRangeLocation = 61;
+		isa = PBXDocBookmark;
+		name = "FoundationTOC.html: ...";
+	};
+	51C9D01503F36A9900BA0631 = {
+		fRef = 51C9D01703F36A9900BA0631;
+		glyphRangeLength = 706;
+		glyphRangeLocation = 2029;
+		isa = PBXDocBookmark;
+		name = "NSEnumerator.html: - (NSArray )...";
+	};
+	51C9D01603F36A9900BA0631 = {
+		isa = PBXFileReference;
+		name = FoundationTOC.html;
+		path = /System/Library/Frameworks/Foundation.framework/Versions/C/Resources/English.lproj/Documentation/Reference/ObjC_classic/FoundationTOC.html;
+		refType = 0;
+	};
+	51C9D01703F36A9900BA0631 = {
+		isa = PBXFileReference;
+		name = NSEnumerator.html;
+		path = /System/Library/Frameworks/Foundation.framework/Versions/C/Resources/English.lproj/Documentation/Reference/ObjC_classic/Classes/NSEnumerator.html;
+		refType = 0;
+	};
+	51C9D01803F36A9900BA0631 = {
+		isa = PBXFileReference;
+		name = CocoaTopics.html;
+		path = /Developer/Documentation/Cocoa/CocoaTopics.html;
+		refType = 0;
+	};
+	51C9D01903F36A9900BA0631 = {
+		isa = PBXFileReference;
+		name = FoundationTOC.html;
+		path = /System/Library/Frameworks/Foundation.framework/Versions/C/Resources/English.lproj/Documentation/Reference/ObjC_classic/FoundationTOC.html;
+		refType = 0;
+	};
+	51C9D01A03F36A9900BA0631 = {
+		isa = PBXFileReference;
+		name = NSEnumerator.html;
+		path = /System/Library/Frameworks/Foundation.framework/Versions/C/Resources/English.lproj/Documentation/Reference/ObjC_classic/Classes/NSEnumerator.html;
+		refType = 0;
+	};
+	51C9D01B03F36A9900BA0631 = {
+		isa = PBXFileReference;
+		name = CocoaTopics.html;
+		path = /Developer/Documentation/Cocoa/CocoaTopics.html;
+		refType = 0;
+	};
+}

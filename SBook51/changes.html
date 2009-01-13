@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<style type="text/css">
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+</style>
+<html>
+<head>
+<title>SBook 5.0 Changes</title>
+</head>
+<body>
+<h1>SBook 5.1 Changes</h1>
+<h2>Changes for Version 5.1.007 (August, 2004)</h2>
+<ul>
+<li>Fixed export of AIM when line was in the form:<br>
+<blockquote>
+<pre>
+aim: myaimusername
+</pre>
+or:
+<pre>
+myaimusername (AIM)
+</pre>
+</blockquote>
+<li>Fixed bug where new entries were not being copied to AddressBook on sync or export.
+<li>Fixed alert bug where loading an XML file generated a warning that the "sbookversion" tag was unknown.
+</ul>
+<h2>Changes for Beta 2 (July 2004)</h2>
+<ul>
+<li>Importing an SBookXML file now does a merge --- the most recent record remains and the older record vanishes. 
+<li>Export to a File works, with Range panel. (Welcome back, Range panel!) This means that you can export, for example, all of the entries modified since last week.
+<li>All places where ASCII is read or written now accept UTF-8 instead.
+<li>Export format is now a modified vCard. (It's a vcard with an X-IMAGE2: field that has a compressed copy of the full SBook record.)
+</ul>
+
+<h1>SBook 5.0 Changes</h1>
+
+<h2>Changes for Version 5.20.001 (November, 2004)</h2>
+<ul>
+<li>Changed version number to avoid function with SBook 5.18.
+<li>Corrected typo in "Doing more with SBook" help.
+</ul>
+
+<h2>Changes for Version 5.1.010 (November, 2004)</h2>
+<ul>
+<li>Fixed dropping of addresses on sync with Apple AddressBook. Now addresses are copied.
+<li>Fixed automatic removal of tabs in entries; they are now preserved.
+<li>Removed plug-ins from Resources directory and moved them to a Plug-ins directory.
+</ul>
+
+<h2>Changes for Version 5.1.0 (November, 2003)</h2>
+<ul>
+<li>Fixed drag-and-drop within SBookText area. (You can now drag from one part of area to another).
+<li>Split SBook5 into multiple bundles which are dynamcially loaded at run time.
+<li>The tab key in the search field now takes the cursor to the SBookText area.
+<li>The option-tab key in the SBookText area takes you to the search field.
+<li>(As always, arrows in the search field move the selected record up and down.)
+<li>Alt-return in search field now works as up arrow to select previous entry.
+<li>shift-click on "@" icon no longer puts in HTML escape stuff necessary for mailto: URLs.
+<li>Found a really nasty bug that caused crashes when too many files were opened and closed. I'm glad we got rid of it!
+<li>Fixed minor bugs in the company parser. "Utilities" is now a pro-company keyword.
+
+<li>Dramatically improved synchronization with Apple
+AddressBook. Entry categories are now properly preserved, even when
+Apple-special labels are used. (Apple's stuff is not documented and
+has required a significant amount of reverse engineering.) Took care
+of several cases that resulted in duplicate data. Dramatically
+improved performance. But be careful! It can sometimes delete SBook entries. <b>Always keep a backup copy.</b>
+
+</ul>
+
+
+<h2>Changes for Version 5.18 (November, 2003)</h2> <ul> <li>Added
+license agreement.  <li>Fixed bug with AddressBook in which names were
+not being printed between entries.  <li>Fixed bug with Services in
+which SBook's window wasn't coming forward after a Services
+request. (Actually, I coded around a bug in Apple's AppKit.)  </ul>
+<h2>Changes for Version 5.17 (November, 2003)</h2> <ul> <li>Further
+improvements to Sync; you can now cancel a sync while it is happening.
+<li>Initial work on remote sync to SBook server.  <li>Finally fixed
+bug where modem was not being released after XX minutes, even though
+preference to do so was set.  <li>Clicking on email @-sign now sends
+both name and e-mail address to Mail.app.  <li>You can override
+SBook's Person/Company decision by control-clicking on person/company
+icon.  <li>Subtle improvements to parser.  <li>Improvements to
+Preferences panel.  <li>SBook now comes with a license agreement.
+<li>You can now push a single entry to the Apple AddressBook <li>New
+option to remove all space at the beginning of each line.  </ul>
+
+<h2>Changes for Version 5.16 (November, 2003)</h2>
+<ul>
+<li>SBook now requires 10.3. You've been warned.
+<li>Support for 10.3 address book features on sync (noting that something is a company).
+<li>SBook no longer identifies a phone number as a company on sync if the phone number is on the second line of the entry.
+<li>Envelope View now properly takes return address front from return address font well.
+<li>Preferences panel cleaned up.
+<li>File export panel cleaned up.
+<li>Apply Template now clears background color and margins.
+<li>Added once again the abaility to display multiple columns in the browser.
+</ul>
+</body>
+</html>

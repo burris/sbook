@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<entries>
+<frame>383,157,300,400</frame>
+<dontparseflag>0</dontparseflag>
+<template>foo bar%d
+baz</template>
+<filecreationdate>949942957</filecreationdate>
+<listfont>MS Sans Serif 8,1</listfont>
+<entryfont>MS Sans Serif 8,1</entryfont>
+<entry>
+<sk>11967884</sk>
+<ctime>11983872</ctime>
+<mtime>949981224</mtime>
+<atime>949981224</atime>
+<sp>0</sp>
+<cuser></cuser>
+<muser></muser>
+<cltime>11976652</cltime>
+<entime>10749912</entime>
+<emtime>16</emtime>
+<t>foo bar1
+baz</t>
+</entry>
+</entries>

@@ -1,0 +1,92 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {cancel1 = id; cancel2 = id; okay = id; sync = id; }; 
+            CLASS = AddressBookSyncer; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                abRecordsCopied = NSFormCell; 
+                abRecordsSkipped = NSFormCell; 
+                "ab_to_sbook" = NSProgressIndicator; 
+                "abook_cleaner" = NSProgressIndicator; 
+                cancel2Button = id; 
+                okay2Button = id; 
+                sbookRecordsCopied = NSFormCell; 
+                sbookRecordsSkipped = NSFormCell; 
+                "sbook_cleaner" = NSProgressIndicator; 
+                "sbook_to_abook" = NSProgressIndicator; 
+                syncActionMatrix = NSMatrix; 
+                syncSetupPanel = NSPanel; 
+                syncStatusPanel = NSPanel; 
+                totalABRecords = id; 
+                totalSBookRecords = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                copy = id; 
+                cut = id; 
+                delete = id; 
+                displayAll = id; 
+                displayPerson = id; 
+                encryptEntry = id; 
+                exportToiPod = id; 
+                exportTovCards = id; 
+                find = id; 
+                import = id; 
+                importCurrent = id; 
+                newEntry = id; 
+                nextEntry = id; 
+                paste = id; 
+                previousEntry = id; 
+                printEntry = id; 
+                printMailingLabels = id; 
+                refreshDocument = id; 
+                search = id; 
+                syncWithAddressBook = id; 
+                takeSearchModeFromSender = id; 
+                toggleEncryptDatabase = id; 
+                toggleEncryptEntry = id; 
+                toggleFilterCompanies = id; 
+                toggleFilterPeople = id; 
+                toggleIconDisplay = id; 
+                toggleLockEntry = id; 
+                toggleOpenFileOnLaunch = id; 
+                toggleSortEntries = id; 
+            }; 
+            CLASS = SLC; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                addressBook = AddressBookPanel; 
+                addressBookSyncer = AddressBookSyncer; 
+                encryptButton = id; 
+                entryText = SBookText; 
+                entryTextScroller = id; 
+                envelopePanel = EnvelopePanel; 
+                exportFileInfoView = ExportFileInfoView; 
+                exportWell = id; 
+                fieldEditor = NSText; 
+                iconView = SBookIconView; 
+                importAccessoryView = NSView; 
+                importProgress = NSProgressIndicator; 
+                labelMaker = LabelMaker; 
+                lockButton = id; 
+                nameTable = NSTableView; 
+                omitDuplicatesSwitch = NSButton; 
+                progressPanel = ProgressPanel; 
+                rangePanel = RangePanel; 
+                removeExistingvCardsButton = NSButton; 
+                searchCell = NSTextField; 
+                searchModePopup = id; 
+                splitView = id; 
+                statusCell = id; 
+                textStatusCell = id; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {CLASS = "java.lang.Object"; LANGUAGE = Java; }
+    ); 
+    IBVersion = 1; 
+}

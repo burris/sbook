@@ -1,0 +1,60 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = PassphrasePanel; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {okayButton = id; phrase1 = id; phrase2 = id; showTyping = id; }; 
+            SUPERCLASS = SBookModalPanel; 
+        }, 
+        {
+            ACTIONS = {
+                bugsAndSuggestions = id; 
+                import = id; 
+                knownBugsInThisRelease = id; 
+                newInThisRelease = id; 
+                openURL = id; 
+                openURL_Cancel = id; 
+                openURL_Okay = id; 
+                showInspector = id; 
+                showLegal = id; 
+                showPrefs = id; 
+            }; 
+            CLASS = SBookController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                addressBook = id; 
+                bulkEmailer = id; 
+                dialer = id; 
+                emailer = id; 
+                enveloper = id; 
+                every = id; 
+                exportInfoView = id; 
+                importingTabAlertPanel = id; 
+                infoPanel = id; 
+                infoVersionCell = id; 
+                inspector = id; 
+                legalPanel = id; 
+                mailingLabels = id; 
+                newLogger = id; 
+                openURLField = id; 
+                passphraseCreatePanel = id; 
+                prefController = id; 
+                printText = id; 
+                quickFax = id; 
+                ranger = id; 
+                registrationPanel = id; 
+                slistController = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {cancel = id; proceed = id; }; 
+            CLASS = SBookModalPanel; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSPanel; 
+        }, 
+        {CLASS = java.lang.Object; LANGUAGE = Java; }
+    ); 
+    IBVersion = 1; 
+}

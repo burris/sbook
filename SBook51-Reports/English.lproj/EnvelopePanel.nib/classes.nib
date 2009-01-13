@@ -1,0 +1,184 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {changedLayoutInformation = id; }; 
+            CLASS = AbstractReportView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                bottomPageMarginCell = NSFormCell; 
+                fontWell0 = FontWell; 
+                fontWell1 = FontWell; 
+                fontWell2 = FontWell; 
+                layoutProgress = NSProgressIndicator; 
+                leftPageMarginCell = NSFormCell; 
+                numEntriesCell = NSTextField; 
+                numPagesCell = NSTextField; 
+                presetFormatPopup = id; 
+                rightPageMarginCell = NSFormCell; 
+                topPageMarginCell = NSFormCell; 
+            }; 
+            SUPERCLASS = ViewWithUnits; 
+        }, 
+        {
+            ACTIONS = {print = id; }; 
+            CLASS = Controller; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {eView = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {redisplay = id; }; 
+            CLASS = EView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                addrFontWell = FontWell; 
+                addrText = NSTextView; 
+                alignmentPopup = NSPopUpButton; 
+                printBarcode = NSButton; 
+                printFIM = NSButton; 
+                printOutlines = NSButton; 
+                printReturnAddress = NSButton; 
+                retAddrFontWell = FontWell; 
+                retAddrText = NSTextView; 
+            }; 
+            SUPERCLASS = ViewWithUnits; 
+        }, 
+        {
+            ACTIONS = {
+                cancelNewStationery = id; 
+                changeLastnameFirstname = id; 
+                changedUnits = id; 
+                chooseStationery = id; 
+                createLabels = id; 
+                delete = id; 
+                newStationery = id; 
+                okNewStationery = id; 
+            }; 
+            CLASS = EnvelopePanel; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                addrText = NSTextView; 
+                deleteCell = id; 
+                envelopeTab = NSTabViewItem; 
+                envelopeZoomScrollView = ZoomScrollView; 
+                eview = EView; 
+                includeDestinationAddressButton = NSButton; 
+                includeReturnAddressButton = NSButton; 
+                labelTab = NSTabViewItem; 
+                labelView = LabelView; 
+                labelsZoomScrollView = ZoomScrollView; 
+                newCell = id; 
+                newStationeryNameField = NSTextField; 
+                newStationeryNamePanel = NSWindow; 
+                newStationeryOkayButton = NSButton; 
+                newStationeryStatusField = NSTextField; 
+                printLastnameFirstname = NSButton; 
+                retAddrText = NSTextView; 
+                spacerCell = id; 
+                stationeryPopup = NSPopUpButton; 
+                tabView = NSTabView; 
+            }; 
+            SUPERCLASS = SBookModalPanel; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {displayLinkedFontPanel = id; takeFontFrom = id; }; 
+            CLASS = FontWell; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSColorWell; 
+        }, 
+        {
+            ACTIONS = {applyPreset = id; resetElementsLayout = id; }; 
+            CLASS = LabelView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                applyPresetButton = NSPopUpButton; 
+                bottomLabelMarginCell = NSFormCell; 
+                labelsHighCell = NSFormCell; 
+                labelsPerPageField = NSTextField; 
+                labelsWideCell = NSFormCell; 
+                leftLabelMarginCell = NSFormCell; 
+                rightLabelMarginCell = NSFormCell; 
+                textAlignmentMatrix = NSMatrix; 
+                textPositionMatrix = NSMatrix; 
+                topLabelMarginCell = NSFormCell; 
+                zoomScrollView = ZoomScrollView; 
+            }; 
+            SUPERCLASS = AbstractReportView; 
+        }, 
+        {CLASS = NSPopUpButton; LANGUAGE = ObjC; SUPERCLASS = NSButton; }, 
+        {
+            CLASS = ReportsBundleClass; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {envelopePanel = EnvelopePanel; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                bugsAndSuggestions = id; 
+                import = id; 
+                knownBugsInThisRelease = id; 
+                newInThisRelease = id; 
+                openURL = id; 
+                "openURL_Cancel" = id; 
+                "openURL_Okay" = id; 
+                printOneEnvelope = id; 
+                releaseModem = id; 
+                showInspector = id; 
+                showLegal = id; 
+                showPrefs = id; 
+            }; 
+            CLASS = SBookController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                bulkEmailer = id; 
+                dialerPanel = id; 
+                emailer = id; 
+                envelopePanel = EnvelopePanel; 
+                importingTabAlertPanel = id; 
+                infoPanel = id; 
+                infoVersionCell = id; 
+                inspector = id; 
+                legalPanel = id; 
+                mailingLabels = id; 
+                newLogger = id; 
+                openURLField = id; 
+                passphraseCreatePanel = id; 
+                passphraseEnterPanel = id; 
+                preferencePanel = id; 
+                quickFax = id; 
+                registrationPanel = id; 
+                slistController = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {cancel = id; proceed = id; }; 
+            CLASS = SBookModalPanel; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {okButton = id; }; 
+            SUPERCLASS = NSPanel; 
+        }, 
+        {CLASS = SBookSplitView; LANGUAGE = ObjC; SUPERCLASS = NSSplitView; }, 
+        {
+            ACTIONS = {changedPaperSize = id; changedUnits = id; pageSetup = id; }; 
+            CLASS = ViewWithUnits; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                paperNameField = NSTextField; 
+                paperSizeField = NSTextField; 
+                paperSizePopup = NSPopUpButton; 
+                unitsPopup = NSPopUpButton; 
+            }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            ACTIONS = {changeZoom = id; }; 
+            CLASS = ZoomScrollView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {subView = id; zoomButton = id; }; 
+            SUPERCLASS = NSScrollView; 
+        }
+    ); 
+    IBVersion = 1; 
+}
